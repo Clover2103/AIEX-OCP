@@ -1,18 +1,11 @@
-import React, { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from 'react';
 import './Preview.css';
 import logo from '../../assets/Logo AIEX.png';
+import { useRedirectAfterDelay } from '../../hooks/useRedirectAfterDelay';
 
 const Preview = () => {
-  const navigate = useNavigate();
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      navigate('/home');  // Redirige a la página de inicio después de 3 segundos
-    }, 5000); // 3000 milisegundos = 5 segundos
-
-    return () => clearTimeout(timer);
-  }, [navigate]);
+  useRedirectAfterDelay('/home', 5000);
 
   return (
     <div className="App">
