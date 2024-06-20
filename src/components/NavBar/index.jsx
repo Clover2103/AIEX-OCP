@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { GiArchiveRegister } from "react-icons/gi";
 import onac from "../../assets/Logo ONAC.png";
 import aiex from "../../assets/Logo AIEX.png";
 import "./NavBar.css";
@@ -27,7 +28,7 @@ const NavBar = () => {
 
         <div className="btnForm">
           <button>
-            INSCRIBIRME
+            <GiArchiveRegister /> INSCRIBIRME
           </button>
         </div>
       </div>
