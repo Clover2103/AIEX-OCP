@@ -12,6 +12,7 @@
   height: 120px;
   border-bottom: 1.5px solid var(--aiex-yellow);
   box-shadow: 0px 6px 6px var(--aiex-yellow);
+  z-index: 100;
 }
 
 .navBarIzq {
