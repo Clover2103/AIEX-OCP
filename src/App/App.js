@@ -5,6 +5,7 @@ import { Preview } from '../pages/Preview';
 import { Scopes } from '../pages/scopes';
 import { Consultation } from '../pages/consultation';
 import { Contact } from '../pages/contact';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
