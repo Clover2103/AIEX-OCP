@@ -3,8 +3,9 @@ import { NavBar } from "../../components/NavBar";
 import { HomeSlider } from "../../components/HomeSlider";
 import { HomeAboutUs } from "../../components/HomeAboutUs";
 import { MyV } from "../../components/MyV";
-import { Footer } from "../../components/Footer";
 import { Values } from "../../components/Values";
+import { Beginning } from "../../components/Beginning"
+import { Footer } from "../../components/Footer";
 import "./home.css";
 
 
@@ -16,6 +17,7 @@ const Home = () => {
       <HomeAboutUs />
       <MyV />
       <Values />
+      <Beginning />
       <h1>Home</h1>
       <Footer />
     </div>
