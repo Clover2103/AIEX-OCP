@@ -1,0 +1,87 @@
+:root {
+  --aiex-yellow: #F1EC41;
+  --aiex-grey: #F2F4F4;
+  --aiex-white: #FFFFFF;
+  --aiex-dark: #030606;
+}
+
+.values {
+  width: 100%;
+  min-height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+
+.values__title h2 {
+  color: var(--aiex-yellow);
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 4px 4px 4px var(--aiex-dark);
+}
+
+.values__content {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* gap: 15px; */
+}
+
+.valie__container {
+  width: 320px;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+
+.valie__container figure {
+    position: relative;
+    overflow: hidden;
+    height: 320px;
+    width: 320px;
+    border-radius: 50%;
+}
+
+.valie__container figure img {
+    transition: all 500ms ease-out;
+    width: 320px;
+    height: 320px;
+}
+
+.valie__container figure .valie_info {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--aiex-dark); 
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.valie__container figure:hover > .valie_info {
+opacity: 1;
+visibility: visible;
+}
+
+.valie__container figure .valie_info p {
+    color: var(--aiex-white);
+    font-weight: bold;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    font-size: 15px;
+    width: 80%;
+}
+
+.valie__container figure:hover > .valie_info p {
+    margin-bottom: 15px;
+}
