@@ -13,13 +13,13 @@ const HomeAboutUs = () => {
 
   return (
     <div className="homeAboutUs" ref={sectionRef}>
-      <div className="body-about">
-        <div className="cont-about-img" ref={imgRef}>
+      <div className="body-about row g-2">
+        <div className="cont-about-img col-md" ref={imgRef}>
           <div className="cont-img">
             <img src={imgAboutUs} alt="img about us" />
           </div>
         </div>
-        <div className="cont-about-text">
+        <div className="cont-about-text col-md">
           <div className="about-circle-1" ref={circle1Ref}></div>
           <div className="about-circle-2" ref={circle2Ref}></div>
           <div className="about-circle-3" ref={circle3Ref}></div>
