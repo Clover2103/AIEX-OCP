@@ -6,9 +6,8 @@ import { MyV } from "../../components/MyV";
 import { Values } from "../../components/Values";
 import { Beginning } from "../../components/Beginning"
 import { Policies } from "../../components/Policies";
+import { OurAllies } from "../../components/OurAllies";
 import { Footer } from "../../components/Footer";
-import "./home.css";
-
 
 const Home = () => {
   return (
@@ -20,7 +19,7 @@ const Home = () => {
       <Values />
       <Beginning />
       <Policies />
-      <h1>Home</h1>
+      <OurAllies />
       <Footer />
     </div>
   );

@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useCallback } from 'react';
 
 const useSlider = (totalImages, autoScroll = true, intervalTime = 3000) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -12,6 +12,14 @@ const useSlider = (totalImages, autoScroll = true, intervalTime = 3000) => {
   const scrollRight = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % totalImages);
   };
+
+  const scrollUp = useCallback(() => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + totalImages) % totalImages);
+  }, [totalImages]);
+
+  const scrollDown = useCallback(() => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % totalImages);
+  }, [totalImages]);
 
   const goToIndex = (index) => {
     setCurrentIndex(index);
@@ -35,6 +43,8 @@ const useSlider = (totalImages, autoScroll = true, intervalTime = 3000) => {
     sliderRef,
     scrollLeft,
     scrollRight,
+    scrollUp,
+    scrollDown,
     goToIndex,
     handleMouseEnter,
     handleMouseLeave,

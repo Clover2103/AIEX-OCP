@@ -1,0 +1,74 @@
+.cont-inf-allies {
+  width: 230px;
+  height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  margin-top: 16px;
+  border-radius: 50%;
+  border: 1.5px solid var(--aiex-dark);
+}
+
+.cont-inf-allies figure {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-inf-allies figure img {
+    transition: all 500ms ease-out;
+    width: 75%;
+    height: 75%;
+}
+
+.cont-inf-allies figure .allies_info {
+    position: absolute;
+    margin: 0;
+    width: 230px;
+    height: 230px;
+    background-color: var(--aiex-dark); 
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-inf-allies figure:hover > .allies_info {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cont-inf-allies figure .allies_info p {
+    color: var(--aiex-white);
+    font-weight: bold;
+    margin-bottom: 120px;
+    transition: all 500ms ease-out;
+    font-size: 12px;
+    width: 80%;
+}
+
+.cont-inf-allies figure:hover > .allies_info p {
+    margin-bottom: 15px;
+}
+
+.btn-allies {
+  background-color: var(--aiex-dark);
+  border-radius: 12px;
+  color: var(--aiex-white);
+  font-weight: bold;
+  font-size: 15px;
+  padding: 8px 16px;
+  cursor: pointer;
+  border: 2px solid var(--aiex-white);
+}
