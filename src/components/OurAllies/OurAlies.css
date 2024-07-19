@@ -27,8 +27,15 @@
   border-radius: 8px;
 }
 
+.our-allies-left .animate {
+  animation: fadeIn 3s ease;
+}
+
 .our-allies-slider {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .our-allies-slider-container {

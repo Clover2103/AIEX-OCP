@@ -4,14 +4,13 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import isme from "../../assets/Logo ISME.png";
 import onac from "../../assets/Logo ONAC.png";
-import aiex from "../../assets/Logo AIEX.png";
 import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer row g-3">
 
-      <div className="cont-area">
+      <div className="cont-area col-md-4">
         <div className="cont-acred">
           <p>Certificado y avalado por: </p>
           <div className="cont-logo-footer">
@@ -27,7 +26,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="cont-area">
+      <div className="cont-area col-md-4">
         <div className="redes">
           <div>
             <a href="" target="_blank">
@@ -65,7 +64,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="cont-area">
+      <div className="cont-area col-md-4">
         <div className="cont-links">
           <p>Politicas de la organización</p>
           <p>¿Quienes somos?</p>

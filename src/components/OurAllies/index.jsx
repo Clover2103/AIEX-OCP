@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSlider } from '../../hooks/useSlider';
 import { AllyCard } from '../AllyCard';
+import { useVisibility } from "../../hooks/useVisibility";
 import allies from "../../assets/inicio/allies/aliados.png";
 import aiexsst from "../../assets/inicio/allies/logo-aiexsst.png";
 import clubtiro from "../../assets/inicio/allies/logo-clubdetiro.png";
@@ -23,6 +24,7 @@ const alliesData = [
 
 const OurAllies = () => {
   const { currentIndex, sliderRef, scrollUp, scrollDown, handleMouseEnter, handleMouseLeave } = useSlider(alliesData.length, true, 3000);
+  const imgRef = useVisibility();
 
   const getVisibleSlides = () => {
     const visibleSlides = [];
@@ -38,10 +40,10 @@ const OurAllies = () => {
 
         <div className="col-md our-allies-left">
           <h2>NUESTROS ALIADOS</h2>
-          <img src={allies} alt="aliados" />
+          <img src={allies} alt="aliados" ref={imgRef} />
         </div>
 
-        <div className="col-md our-allies-slider" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className="col-md our-allies-slider mt-4 mb-4" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
           <div className="our-allies-slider-container">
             <button className="nav-btn-QA prev-btn" onClick={scrollUp}>&#9650;</button>
             <div className="slider" ref={sliderRef} style={{ transform: `translateY(-${currentIndex})` }}>
