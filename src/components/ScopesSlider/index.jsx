@@ -27,7 +27,7 @@ const ScopesSlider = () => {
             ))}
           </div>
         </div>
-        <div className='scopes-slider-title'>
+        <div className='scopes-slider-title mb-5 mt-3'>
           <h2>ALCANCES PARA CERTIFICAR</h2>
         </div>
       </div>
