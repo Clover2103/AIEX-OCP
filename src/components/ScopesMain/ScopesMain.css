@@ -39,7 +39,7 @@
 
 @media (max-width: 767.98px) {
   .scheme-item {
-    flex: 1 0 100%; /* Las imágenes ocupan toda la fila en pantallas pequeñas */
+    flex: 1 0 100%;
     margin-bottom: 15px;
   }
 }
