@@ -17,6 +17,9 @@ const ConsultationCertificate = () => {
           </div>
         </div>
       </form>
+      <div className="certificate-body">
+        <h3>Contenido del certificado</h3>
+      </div>
     </div>
   );
 };
