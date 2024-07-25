@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavBar } from "../../components/NavBar";
 import { ConsultationSelect } from "../../components/ConsultationSelect";
 import { ConsultationCertificate } from "../../components/ConsultationCertificate";
+import { ConsultationDocuments } from "../../components/ConsultationDocuments";
 import { Footer } from "../../components/Footer";
 import './consultation.css';
 
@@ -23,6 +24,7 @@ const Consultation = () => {
         Contenido de Certificados
       </div>
       <div className={`documentos-content ${selectedOption === 'documentos' ? 'visible' : 'hidden'}`}>
+        <ConsultationDocuments />
         Contenido de Documentos
       </div>
       <div className={`manuales-content ${selectedOption === 'manuales' ? 'visible' : 'hidden'}`}>
