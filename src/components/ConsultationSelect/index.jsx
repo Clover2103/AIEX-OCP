@@ -1,18 +1,32 @@
 import React from 'react';
 import './ConsultationSelect.css';
 
-const ConsultationSelect = () => {
+const ConsultationSelect = ({ onSelectChange }) => {
+  const handleSelectChange = (event) => {
+    const value = event.target.value;
+    console.log(value);
+    onSelectChange(value);
+  };
+
   return (
     <div className="ConsultationSelect container m-5">
-      <div class="form-floating consultation-cont">
-        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
-          <option value="certificado" selected>CERTIFICADO</option>
+      <div className="form-floating consultation-cont">
+        <select 
+          className="form-select" 
+          id="selectConsultation" 
+          aria-label="Floating label select example" 
+          onChange={handleSelectChange}
+          defaultValue="certificado"
+        >
+          <option value="certificado">CERTIFICADO</option>
           <option value="documentos">DOCUMENTOS</option>
+          <option value="manuales">MANUALES</option>
         </select>
-        <label for="floatingSelect">Realizar consulta</label>
+        <label htmlFor="selectConsultation">Realizar consulta</label>
       </div>
     </div>
   );
 };
 
 export { ConsultationSelect };
+

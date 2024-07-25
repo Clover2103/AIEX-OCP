@@ -59,7 +59,6 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <p>ONAC - Acreditación de Ocupaciones Profesionales</p>
           <p>© 2023 AIEX. Todos los derechos reservados.</p>
         </div>
       </div>
