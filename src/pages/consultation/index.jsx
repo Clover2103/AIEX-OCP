@@ -3,6 +3,7 @@ import { NavBar } from "../../components/NavBar";
 import { ConsultationSelect } from "../../components/ConsultationSelect";
 import { ConsultationCertificate } from "../../components/ConsultationCertificate";
 import { ConsultationDocuments } from "../../components/ConsultationDocuments";
+import { ConsultationManuals } from "../../components/ConsultationManuals";
 import { Footer } from "../../components/Footer";
 import './consultation.css';
 
@@ -21,14 +22,12 @@ const Consultation = () => {
       
       <div className={`certificado-content ${selectedOption === 'certificado' ? 'visible' : 'hidden'}`}>
         <ConsultationCertificate />
-        Contenido de Certificados
       </div>
       <div className={`documentos-content ${selectedOption === 'documentos' ? 'visible' : 'hidden'}`}>
         <ConsultationDocuments />
-        Contenido de Documentos
       </div>
       <div className={`manuales-content ${selectedOption === 'manuales' ? 'visible' : 'hidden'}`}>
-        Contenido de Manuales
+        <ConsultationManuals />
       </div>
 
       <Footer />
