@@ -1,0 +1,9 @@
+.ConsultationSelect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.consultation-cont {
+  width: 380px;
+}
