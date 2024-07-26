@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import vigilante from "../../assets/alcances/schemes scopes/esquema-vigilante.png";
 import supervisor from "../../assets/alcances/schemes scopes/esquema-supervisor.png";
 import escolta from "../../assets/alcances/schemes scopes/esquema-escolta.png";
@@ -9,13 +10,13 @@ import riesgos from "../../assets/alcances/schemes scopes/esquema-riesgos.png";
 import './ScopesMain.css';
 
 const schemesData = [
-  { src: vigilante, alt: "vigilante", url: "#" },
-  { src: supervisor, alt: "supervisor", url: "#" },
-  { src: escolta, alt: "escolta", url: "#" },
-  { src: medios, alt: "medios", url: "#" },
-  { src: AOEA, alt: "AOEA", url: "#" },
-  { src: GISC, alt: "GISC", url: "#" },
-  { src: riesgos, alt: "riesgos", url: "#" },
+  { src: vigilante, alt: "vigilante", url: "/approach-vigilancia" },
+  { src: supervisor, alt: "supervisor", url: "/approach-supervisor" },
+  { src: escolta, alt: "escolta", url: "/approach-escolta" },
+  { src: medios, alt: "medios", url: "/approach-OMT" },
+  { src: AOEA, alt: "AOEA", url: "/approach-AOEA" },
+  { src: GISC, alt: "GISC", url: "/approach-GISC" },
+  { src: riesgos, alt: "riesgos", url: "/approach-riesgos" },
 ];
 
 const ScopesMain = () => {
@@ -28,9 +29,9 @@ const ScopesMain = () => {
         <div className="schemes row g-3 justify-content-center">
           {schemesData.map(({ src, alt, url }, index) => (
             <div key={index} className="scheme-item col-md-4">
-              <a href={url} target="_blank" rel="noopener noreferrer">
+              <Link to={url} >
                 <img src={src} alt={alt} className="scheme-image" />
-              </a>
+              </Link>
             </div>
           ))}
         </div>

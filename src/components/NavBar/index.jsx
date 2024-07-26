@@ -28,7 +28,7 @@ const NavBar = () => {
 
         <div className="btnForm">
           <button>
-            <GiArchiveRegister /> INSCRIBIRME
+            <GiArchiveRegister /> REGISTRARME
           </button>
         </div>
       </div>

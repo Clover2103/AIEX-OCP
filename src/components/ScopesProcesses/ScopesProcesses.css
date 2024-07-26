@@ -6,7 +6,9 @@
 }
 
 .scopes-processes-body {
-  min-height: 550px;
+  width: 100%;
+  min-height: 275px;
+  margin-bottom: 15px;
 }
 
 .scopes-processes-descrip {
