@@ -1,0 +1,34 @@
+.ApploachVigilanciaSlider {
+  margin-top: 6px;
+  min-height: 320px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.ApploachVigilanciaSlider img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+}
+
+.ApploachVigilanciaSlider h1 {
+  z-index: 100;
+  position: absolute;
+  color: var(--aiex-white);
+  font-weight: bold;
+  text-shadow: 4px 4px 6px var(--aiex-dark);
+}
+
+.back {
+  background-color: var(--aiex-yellow);
+  position: absolute;
+  z-index: 80;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
