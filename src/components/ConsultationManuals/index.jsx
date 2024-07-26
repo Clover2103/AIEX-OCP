@@ -3,7 +3,7 @@ import "./ConsultationManuals.css";
 
 const ConsultationManuals = () => {
   return (
-    <div className="manuals-content">
+    <div className="manuals-content container">
       <h1>Contenido de Manuales</h1>
     </div>
   );
