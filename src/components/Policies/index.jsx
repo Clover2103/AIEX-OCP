@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import "./Policies.css";
 
 const Policies = () => {
@@ -12,7 +13,7 @@ const Policies = () => {
 
       <div className="col-md-4 policie-info-rigth">
         <h2>CONOCE NUESTRAS POLITICAS</h2>
-        <button>HAZ CLICK AQUÍ</button>
+        <Link to="/policies"><button>HAZ CLICK AQUÍ</button></Link>
       </div>
     
     </div>

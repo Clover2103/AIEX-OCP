@@ -15,7 +15,9 @@ const NavBar = () => {
             </a>
           </div>
           <div className="navBar__logo">
-            <img src={aiex} alt="AIEX" />
+            <Link to="/home" style={{ textDecoration: 'none' }}>
+              <img src={aiex} alt="AIEX" />
+            </Link>
           </div>
         </div>
         

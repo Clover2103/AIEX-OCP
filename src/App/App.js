@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home } from '../pages/home';
+import { Policies } from '../pages/policies';
 import { Preview } from '../pages/Preview';
 import { Scopes } from '../pages/scopes';
 import { ApproachVigilancia } from '../pages/approach-vigilancia';
@@ -20,6 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Preview />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/policies" element={<Policies />} />
         <Route path="/scopes" element={<Scopes />} />
         <Route path="/consultation" element={<Consultation />} />
         <Route path="/contact" element={<Contact />} />
