@@ -2,7 +2,7 @@ import React from "react";
 import enfoque from "../../assets/alcances/approach scopes/enfoque.png"; 
 const ApproachSupervisorBody = () => {
   return (
-    <div>
+    <div className="mb-5">
       <h2 className="h1" style={{ textAlign: "center" }}>ENFOQUE FUNCIONAL</h2>
       <div className="container">
         <div className="row">

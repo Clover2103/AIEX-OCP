@@ -3,7 +3,7 @@ import { FaTiktok } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import isme from "../../assets/Logo ISME.png";
-import onac from "../../assets/Logo ONAC.png";
+import onac from "../../assets/footer/Logo ONAC.png";
 import "./Footer.css";
 
 const Footer = () => {
@@ -12,7 +12,7 @@ const Footer = () => {
 
       <div className="cont-area col-md-4">
         <div className="cont-acred">
-          <p>Certificado y avalado por: </p>
+          <p>Acreditado por: </p>
           <div className="cont-logo-footer">
             <img src={onac} alt="ONAC" />
           </div>
@@ -59,7 +59,7 @@ const Footer = () => {
           </div>
         </div>
         <div>
-          <p>© 2023 AIEX. Todos los derechos reservados.</p>
+          <p>© 2024 AIEX. Todos los derechos reservados.</p>
         </div>
       </div>
 

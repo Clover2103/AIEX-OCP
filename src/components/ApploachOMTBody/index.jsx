@@ -3,7 +3,7 @@ import esquema from "../../assets/alcances/approach scopes/enfoque.png";
 
 const ApproachOMTBody = () => {
   return (
-    <div>
+    <div className="mb-5">
       <h2 className="h1" style={{ textAlign: "center" }}>ENFOQUE FUNCIONAL</h2>
       <div className="container">
         <div className="row">
