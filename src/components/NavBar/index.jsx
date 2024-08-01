@@ -5,19 +5,25 @@ import onac from "../../assets/Logo ONAC.png";
 import aiex from "../../assets/Logo AIEX.png";
 import "./NavBar.css";
 
-const NavBar = () => {
+const NavBar = ({ showModal }) => {
+
+  const handleButtonClick = () => {
+    const content = <div>Contenido del formulario del modal del NavBar</div>;
+    showModal(content);
+  };
+
   return (
       <div className="navBar">
-        <div className="navBarIzq">
-          <div className="navBar__logo">
-            <a href="https://onac.org.co/directorio3/index.php/acreditaciones/15-ocp-005" target="_blank" rel="noopener noreferrer">
-              <img src={onac} alt="ONAC" />
-            </a>
-          </div>
-          <div className="navBar__logo">
+        <div className="navBarIzq gap-2">
+          <div className="navBar__logo aiex-logo-navbar">
             <Link to="/home" style={{ textDecoration: 'none' }}>
               <img src={aiex} alt="AIEX" />
             </Link>
+          </div>
+          <div className="navBar__logo onac-logo-navbar">
+            <a href="https://onac.org.co/directorio3/index.php/acreditaciones/15-ocp-005" target="_blank" rel="noopener noreferrer">
+              <img src={onac} alt="ONAC" />
+            </a>
           </div>
         </div>
         
@@ -29,7 +35,7 @@ const NavBar = () => {
         </div>
 
         <div className="btnForm">
-          <button>
+          <button onClick={ handleButtonClick }>
             <GiArchiveRegister /> REGISTRARME
           </button>
         </div>

@@ -19,9 +19,17 @@
   display: flex;
 }
 
-.navBar__logo img {
-  height: 120px;
+.onac-logo-navbar img,
+.aiex-logo-navbar img{
   cursor: pointer;
+}
+
+.aiex-logo-navbar img{
+  height: 80px;
+}
+
+.onac-logo-navbar img{
+  height: 95px;
 }
 
 .navBar__links {

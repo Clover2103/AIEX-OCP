@@ -3,13 +3,18 @@ import imgAboutUs from "../../assets/inicio/about-us/quienes somos.png";
 import { useVisibility } from "../../hooks/useVisibility";
 import "./HomeAboutUs.css";
 
-const HomeAboutUs = () => {
+const HomeAboutUs = ( { showModal } ) => {
   const sectionRef = useVisibility();
   const circle1Ref = useVisibility();
   const circle2Ref = useVisibility();
   const circle3Ref = useVisibility();
   const textRef = useVisibility();
   const imgRef = useVisibility();
+
+  const handleButtonClick = () => {
+    const content = <div>Información del modal de About Us</div>;
+    showModal(content);
+  };
 
   return (
     <div className="homeAboutUs" ref={sectionRef}>
@@ -28,7 +33,7 @@ const HomeAboutUs = () => {
             <p>
               CERTIFICACIÓN DE PERSONAS AIEX S.A.S. es un Organismo de Evaluación de la Conformidad acreditado bajo la Norma ISO/IEC 17024:2012 de naturaleza privada y alto sentido de responsabilidad social, que busca contribuir a la productividad y competitividad empresarial a partir de la ejecución de procesos de...
             </p>
-            <button className="btn-saber-mas">
+            <button className="btn-saber-mas" onClick={handleButtonClick}>
               Saber más
             </button>
           </div>

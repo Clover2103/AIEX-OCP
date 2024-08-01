@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Home } from '../pages/home';
 import { Policies } from '../pages/policies';
@@ -13,27 +13,47 @@ import { ApproachGISC } from '../pages/approach-GISC';
 import { ApproachRiesgos } from '../pages/approach-riesgos';
 import { Consultation } from '../pages/consultation';
 import { Contact } from '../pages/contact';
+import { NavBar } from '../components/NavBar';
+import { Footer } from '../components/Footer';
+import { Modal } from '../components/Modal';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [modalContent, setModalContent] = useState(null);
+
+  const showModal = (content) => {
+    setModalContent(content);
+    setIsModalVisible(true);
+  };
+
+  const hideModal = () => {
+    setIsModalVisible(false);
+    setModalContent(null);
+  };
+
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={<Preview />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/policies" element={<Policies />} />
-        <Route path="/scopes" element={<Scopes />} />
-        <Route path="/consultation" element={<Consultation />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/approach-vigilancia" element={<ApproachVigilancia />} />
-        <Route path="/approach-supervisor" element={<ApproachSupervisor />} />
-        <Route path="/approach-escolta" element={<ApproachEscolta />} />
-        <Route path="/approach-OMT" element={<ApproachOMT />} />
-        <Route path="/approach-AOEA" element={<ApproachAOEA />} />
-        <Route path="/approach-GISC" element={<ApproachGISC />} />
-        <Route path="/approach-riesgos" element={<ApproachRiesgos />} />
-      </Routes>
-    </Router>
+        <NavBar showModal={showModal} />
+        <Routes>
+          <Route path="/" element={<Preview />} />
+          <Route path="/home" element={<Home showModal={showModal}/>} />
+          <Route path="/policies" element={<Policies />} />
+          <Route path="/scopes" element={<Scopes />} />
+          <Route path="/consultation" element={<Consultation />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/approach-vigilancia" element={<ApproachVigilancia />} />
+          <Route path="/approach-supervisor" element={<ApproachSupervisor />} />
+          <Route path="/approach-escolta" element={<ApproachEscolta />} />
+          <Route path="/approach-OMT" element={<ApproachOMT />} />
+          <Route path="/approach-AOEA" element={<ApproachAOEA />} />
+          <Route path="/approach-GISC" element={<ApproachGISC />} />
+          <Route path="/approach-riesgos" element={<ApproachRiesgos />} />
+        </Routes>
+        <Footer />
+        <Modal isVisible={isModalVisible} hideModal={hideModal} content={modalContent} />
+      </Router>
   );
 }
 
