@@ -4,6 +4,7 @@
   overflow: hidden;
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -18,10 +19,15 @@
 
 .scopes-slider-f-a-body h1 {
   z-index: 100;
-  position: absolute;
   color: var(--aiex-white);
   font-weight: bold;
   text-shadow: 4px 4px 6px var(--aiex-dark);
+}
+
+.scopes-slider-f-a-body p {
+  z-index: 100;
+  color: var(--aiex-dark);
+  font-weight: bold;
 }
 
 .back {

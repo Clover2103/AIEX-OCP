@@ -1,13 +1,15 @@
 import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
-// import { FaRegPaperPlane } from "react-icons/fa";
-// import { FaRegMap } from "react-icons/fa";
-// import { FaRegLightbulb } from "react-icons/fa";
+import { ScopesSliderStatic } from '../../components/ScopesSliderStatic';
+import image from '../../assets/alcances/slider scopes/scopes slider static derechos y deberes.png'
 
 const ScopesRAndD = () => {
   return (
     <div className="scopes-r-and-d-body w-100">
-      <h1>DERECHOS Y DEBERES</h1>
+      <ScopesSliderStatic
+        imageSrc={image}
+        title="DERECHOS Y DEBERES"
+        description="A continuación mostraremos los derechos y deberes de los aspirantes a certificación"
+      />
     </div>
   );
 };
