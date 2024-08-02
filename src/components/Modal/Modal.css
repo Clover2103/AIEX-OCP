@@ -1,4 +1,10 @@
-/* Modal.css */
+:root {
+  --aiex-yellow: #F1EC41;
+  --aiex-grey: #F2F4F4;
+  --aiex-white: #FFFFFF;
+  --aiex-dark: #030606;
+}
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -10,26 +16,63 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  overscroll-behavior-y: none;
 }
 
-.modal {
-  background: white;
+.modal-content {
   padding: 20px;
   border-radius: 8px;
   max-width: 500px;
   width: 100%;
+  position: relative;
 }
 
-.modal-close-button {
+.modal-cont {
+  background-color: var(--aiex-white);
+  height: 90vh;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.modal-close {
   position: absolute;
   top: 10px;
   right: 10px;
   background: none;
   border: none;
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
+  border-radius: 50%;
+  background-color: red;
+  color: var(--aiex-white);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.modal-content {
+.modal-content-body {
   margin-top: 20px;
+}
+
+.about-container-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.about-content-text {
+  max-height: 40vh; 
+  overflow-y: auto; 
+  padding-right: 10px; 
+  text-align: justify;
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.about-container-modal img {
+  height: 180px;
 }

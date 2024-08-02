@@ -9,8 +9,10 @@ const Modal = ({ isVisible, hideModal, content }) => {
   return ReactDOM.createPortal(
     <div className="modal-overlay" onClick={hideModal}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        <button className="modal-close" onClick={hideModal}>X</button>
-        {content}
+        <div className="modal-cont">
+          <button className="modal-close" onClick={hideModal}>X</button>
+          {content}
+        </div>
       </div>
     </div>,
     document.getElementById('modal')

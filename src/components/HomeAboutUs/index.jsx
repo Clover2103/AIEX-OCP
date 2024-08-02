@@ -1,5 +1,6 @@
 import React from "react";
 import imgAboutUs from "../../assets/inicio/about-us/quienes somos.png";
+import imgAboutModal from "../../assets/inicio/about-us/quienes somos - emergente.png";
 import { useVisibility } from "../../hooks/useVisibility";
 import "./HomeAboutUs.css";
 
@@ -12,7 +13,16 @@ const HomeAboutUs = ( { showModal } ) => {
   const imgRef = useVisibility();
 
   const handleButtonClick = () => {
-    const content = <div>Información del modal de About Us</div>;
+    const content = 
+    <div className="about-container-modal">
+      <h2>QUIENES SOMOS</h2>
+      <div className="about-content-text">
+        <p>CERTIFICACIÓN DE PERSONAS AIEX S.A.S. es un Organismo de Evaluación de la Conformidad acreditado bajo la Norma ISO/IEC 17024:2012 de naturaleza privada y alto sentido de responsabilidad social, que busca contribuir a la productividad y competitividad empresarial a partir de la ejecución de procesos de certificación de personas justos, equitativos y confiables que garanticen la capacidad y demostración efectiva de las evidencias de conocimiento y desempeño de las personas certificadas en cada alcance.</p>
+        <p>Sabemos lo importante que es alcanzar los objetivos estratégicos en las organizaciones y esto se logra a partir de la gestión del talento humano competente, que aplique los más altos estándares de calidad en sus responsabilidades diarias lo cual redundará en la oferta de productos y servicios de calidad que satisfagan plenamente las expectativas de sus clientes.</p>
+        <p>Conózcanos, para así poder ofrecerle un servicio de evaluación y certificación idóneo que ateste la competencia necesaria de una persona para un desarrollo efectivo de su labor.</p>
+      </div>
+      <img src={imgAboutModal} alt="quienes somos emergente" />
+    </div>;
     showModal(content);
   };
 
@@ -44,4 +54,3 @@ const HomeAboutUs = ( { showModal } ) => {
 };
 
 export { HomeAboutUs };
-
