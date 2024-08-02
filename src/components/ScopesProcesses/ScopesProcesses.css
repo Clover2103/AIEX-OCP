@@ -22,25 +22,6 @@
   text-align: center;
 }
 
-.scopes-processes-descrip h3 {
-  font-size: 30px;
-  color: var(--aiex-yellow);
-  font-weight: bold;
-  text-shadow: 5px 5px 5px var(--aiex-dark);
-}
-
-.scopes-processes-descrip p {
-  font-size: 18px;
-}
-
-.scopes-processes-container {
-  min-height: 275px;
-}
-
-.scopes-processes-content {
-  min-height: 275px;
-}
-
 .scopes-processes {
   min-height: 200px;
   display: flex;
@@ -49,15 +30,32 @@
   align-items: center;
 }
 
+.scopes-processes a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: bold;
+}
+
 .scopes-processes button {
   width: 200px;
   height: 50px;
   font-size: 15px;
   font-weight: bold;
   background-color: var(--aiex-yellow);
+  color: var(--aiex-dark);
   border-radius: 25px;
   border: none;
   cursor: pointer;
+}
+
+.scopes-processes a:hover .processes-icon-cont,
+.scopes-processes a:hover button {
+  background-color: var(--aiex-dark);
+  color: var(--aiex-white);
+  transition: 0.5s;
 }
 
 .processes-icon-cont {
@@ -67,6 +65,7 @@
   justify-content: center;
   align-items: center;
   background-color: var(--aiex-yellow);
+  color: var(--aiex-dark);
   border-radius: 50%;
   margin-bottom: 16px;
 }

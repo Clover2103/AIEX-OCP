@@ -1,0 +1,85 @@
+:root {
+  --aiex-yellow: #F1EC41;
+}
+
+.container-FASpecificBody {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.gear-container {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.gear {
+  color: var(--aiex-yellow);
+  font-size:350px; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: rotateGear 15s linear infinite;
+  z-index: 1;
+}
+
+.gear-modal {
+  color: var(--aiex-dark);
+  font-size:120px; 
+  animation: rotateGearModal 10s linear infinite;
+  z-index: 1;
+}
+
+@keyframes rotateGear {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateGearModal {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.text-inside {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: justify;
+  z-index: 2; 
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.description {
+  font-size: 14px;
+}

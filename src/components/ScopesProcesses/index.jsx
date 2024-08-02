@@ -1,8 +1,9 @@
 import React from 'react';
-import './ScopesProcesses.css';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import { FaRegPaperPlane } from "react-icons/fa";
-import { FaRegMap } from "react-icons/fa6";
+import { FaRegMap } from "react-icons/fa";
 import { FaRegLightbulb } from "react-icons/fa";
+import './ScopesProcesses.css';
 
 const ScopesProcesses = () => {
   return (
@@ -11,30 +12,30 @@ const ScopesProcesses = () => {
         <div className="scopes-processes-container w-100">
           <div className="row g-3 scopes-processes-content">
             <div className="scopes-processes col-md-4">
-              <div className='processes-icon-cont'>
-                <FaRegPaperPlane className='processes-icon'/>
-              </div>
-              <a href="#">
+              <Link to="/scopes-rules">
+                <div className='processes-icon-cont'>
+                  <FaRegPaperPlane className='processes-icon'/>
+                </div>
                 <button>Reglas</button>
-              </a>
+              </Link>
             </div>
 
             <div className="scopes-processes col-md-4">
-              <div className='processes-icon-cont'>
-                <FaRegMap className='processes-icon'/>
-              </div>
-              <a href="#">
+              <Link to="/scopes-r-and-d">
+                <div className='processes-icon-cont'>
+                  <FaRegMap className='processes-icon'/>
+                </div>
                 <button>Derechos y deberes</button>
-              </a>
+              </Link>
             </div>
 
             <div className="scopes-processes col-md-4">
-              <div className='processes-icon-cont'>
-                <FaRegLightbulb className='processes-icon'/>
-              </div>
-              <a href="#">
+              <Link to="/scopes-f-a">
+                <div className='processes-icon-cont'>
+                  <FaRegLightbulb className='processes-icon'/>
+                </div>
                 <button>Enfoque funcional</button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

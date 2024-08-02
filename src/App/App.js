@@ -11,6 +11,9 @@ import { ApproachOMT } from '../pages/approach-OMT';
 import { ApproachAOEA } from '../pages/approach-AOEA';
 import { ApproachGISC } from '../pages/approach-GISC';
 import { ApproachRiesgos } from '../pages/approach-riesgos';
+import { ScopesRules } from '../pages/scopes-rules';
+import { ScopesRAndD } from '../pages/scopes-r-and-d';
+import { ScopesFA } from '../pages/scopes-f-a';
 import { Consultation } from '../pages/consultation';
 import { Contact } from '../pages/contact';
 import { NavBar } from '../components/NavBar';
@@ -50,6 +53,9 @@ function App() {
           <Route path="/approach-AOEA" element={<ApproachAOEA />} />
           <Route path="/approach-GISC" element={<ApproachGISC />} />
           <Route path="/approach-riesgos" element={<ApproachRiesgos />} />
+          <Route path="/scopes-rules" element={<ScopesRules />} />
+          <Route path="/scopes-r-and-d" element={<ScopesRAndD />} />
+          <Route path="/scopes-f-a" element={<ScopesFA showModal={showModal}/>} />
         </Routes>
         <Footer />
         <Modal isVisible={isModalVisible} hideModal={hideModal} content={modalContent} />
