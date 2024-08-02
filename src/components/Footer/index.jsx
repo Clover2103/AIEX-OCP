@@ -3,7 +3,7 @@ import { FaTiktok } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import isme from "../../assets/Logo ISME.png";
-import onac from "../../assets/footer/Logo ONAC.png";
+import onac from "../../assets/footer/Logo ONAC.jpg";
 import "./Footer.css";
 
 const Footer = () => {
@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="cont-area col-md-4">
         <div className="cont-acred">
           <p>Acreditado por: </p>
-          <div className="cont-logo-footer">
+          <div className="cont-logo-footer logo-footer-onac">
             <img src={onac} alt="ONAC" />
           </div>
         </div>

@@ -45,6 +45,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 .cont-logo-footer img{
@@ -53,6 +54,11 @@
   padding: 0;
   margin: 0;
   border-radius: 25%;
+}
+
+.logo-footer-onac img {
+  width: 180%;
+  height: 100%;
 }
 
 
