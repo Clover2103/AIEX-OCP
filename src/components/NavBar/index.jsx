@@ -27,7 +27,7 @@ const NavBar = ({ showModal }) => {
           </div>
         </div>
         
-        <div className="navBar__links">
+        <div className="navBar__links gap-3">
           <Link to="/home">INICIO</Link>
           <Link to="/scopes">ALCANCES</Link>
           <Link to="/consultation">CONSULTAS</Link>

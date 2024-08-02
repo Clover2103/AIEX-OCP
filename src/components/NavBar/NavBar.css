@@ -34,17 +34,24 @@
 
 .navBar__links {
   display: flex;
-  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
 .navBar__links a {
   text-decoration: none;
   color: var(--aiex-dark);
   font-size: 17px;
+  width: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navBar__links a:hover {
-  text-shadow: 2px 2px 2px var(--aiex-yellow);
+  background-color: var(--aiex-yellow);
   font-weight: bold;
 }
 
