@@ -1,0 +1,27 @@
+.cont-randd {
+  align-items: center;
+}
+
+.cont-randd h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.cont-randd div {
+  margin: 20px auto 45px ;
+  text-align: center;
+  font-size: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  color: var(--aiex-yellow);
+  border-radius: 50%;
+  border: 3px solid var(--aiex-yellow);
+}
+
+.cont-randd p {
+  text-align: justify;
+  margin-bottom: 35px;
+}
