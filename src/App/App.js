@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { Home } from '../pages/home';
 import { Policies } from '../pages/policies';
 import { Preview } from '../pages/Preview';
@@ -25,6 +25,7 @@ function App() {
 
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [modalContent, setModalContent] = useState(null);
+  const location = useLocation();
 
   const showModal = (content) => {
     setModalContent(content);
@@ -37,31 +38,38 @@ function App() {
   };
 
   return (
-    <Router>
-        <NavBar showModal={showModal} />
-        <Routes>
-          <Route path="/" element={<Preview />} />
-          <Route path="/home" element={<Home showModal={showModal}/>} />
-          <Route path="/policies" element={<Policies />} />
-          <Route path="/scopes" element={<Scopes />} />
-          <Route path="/consultation" element={<Consultation />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/approach-vigilancia" element={<ApproachVigilancia />} />
-          <Route path="/approach-supervisor" element={<ApproachSupervisor />} />
-          <Route path="/approach-escolta" element={<ApproachEscolta />} />
-          <Route path="/approach-OMT" element={<ApproachOMT />} />
-          <Route path="/approach-AOEA" element={<ApproachAOEA />} />
-          <Route path="/approach-GISC" element={<ApproachGISC />} />
-          <Route path="/approach-riesgos" element={<ApproachRiesgos />} />
-          <Route path="/scopes-rules" element={<ScopesRules />} />
-          <Route path="/scopes-r-and-d" element={<ScopesRAndD />} />
-          <Route path="/scopes-f-a" element={<ScopesFA showModal={showModal}/>} />
-        </Routes>
-        <Footer />
-        <Modal isVisible={isModalVisible} hideModal={hideModal} content={modalContent} />
-      </Router>
+    <div>
+      {location.pathname !== "/" && <NavBar showModal={showModal} />}
+      <Routes>
+        <Route path="/" element={<Preview />} />
+        <Route path="/home" element={<Home showModal={showModal}/>} />
+        <Route path="/policies" element={<Policies />} />
+        <Route path="/scopes" element={<Scopes />} />
+        <Route path="/consultation" element={<Consultation />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/approach-vigilancia" element={<ApproachVigilancia />} />
+        <Route path="/approach-supervisor" element={<ApproachSupervisor />} />
+        <Route path="/approach-escolta" element={<ApproachEscolta />} />
+        <Route path="/approach-OMT" element={<ApproachOMT />} />
+        <Route path="/approach-AOEA" element={<ApproachAOEA />} />
+        <Route path="/approach-GISC" element={<ApproachGISC />} />
+        <Route path="/approach-riesgos" element={<ApproachRiesgos />} />
+        <Route path="/scopes-rules" element={<ScopesRules />} />
+        <Route path="/scopes-r-and-d" element={<ScopesRAndD />} />
+        <Route path="/scopes-f-a" element={<ScopesFA showModal={showModal}/>} />
+      </Routes>
+      {location.pathname !== "/" && <Footer />}
+      <Modal isVisible={isModalVisible} hideModal={hideModal} content={modalContent} />
+    </div>
   );
 }
 
-export { App };
+function AppWithRouter() {
+  return (
+    <Router>
+      <App />
+    </Router>
+  );
+}
 
+export { AppWithRouter as App };

@@ -28,7 +28,7 @@ const Preview = () => {
           <div className='circule-14 circule'></div>
           <div className='circule-15 circule'></div>
           <div className='logo'>
-            <img src={logo} className="App-logo" alt="logo" />
+            <img src={logo} className="App-logo-preview" alt="logo" />
           </div>
         </div>
         <p>Por favor, espere<span className="loading-dots"></span></p>

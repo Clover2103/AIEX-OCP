@@ -31,9 +31,8 @@
   position: relative;
 }
 
-.App-logo {
-  border-radius: 25%;
-  height: 80%;
+.App-logo-preview {
+  height: 60%;
   pointer-events: none;
 }
 
