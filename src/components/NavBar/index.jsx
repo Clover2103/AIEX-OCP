@@ -8,7 +8,14 @@ import "./NavBar.css";
 const NavBar = ({ showModal }) => {
 
   const handleButtonClick = () => {
-    const content = <div>Contenido del formulario del modal del NavBar</div>;
+    const content = 
+    <div className="container-iframe-navbar w-100">
+      <iframe 
+        src="https://e-learning-ocp.aiex.com.co/login/signup.php" 
+        frameBorder="0" 
+        title="E-learning"
+      ></iframe>
+    </div>;
     showModal(content);
   };
 
