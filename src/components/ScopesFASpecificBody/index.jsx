@@ -28,6 +28,9 @@ const ScopesFASpecificBody = ({ showModal }) => {
           </div>
         </div>
       )}
+      <div className='row text-center'>
+        <h2>ENFOQUE FUNCIONAL DE LOS ESQUEMAS DE CERTIFICACIÓN DE AIEX S.A.S. </h2>
+      </div>
 
       <div className="gear-container">
         <div className="icon-container">

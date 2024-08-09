@@ -19,7 +19,7 @@ import { Contact } from '../pages/contact';
 import { NavBar } from '../components/NavBar';
 import { Footer } from '../components/Footer';
 import { Modal } from '../components/Modal';
-import { RedesFlotantes } from '../components/Redes'
+import { RedesFlotantes } from '../components/Redes';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
