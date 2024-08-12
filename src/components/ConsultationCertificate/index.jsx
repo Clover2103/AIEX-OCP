@@ -5,23 +5,23 @@ import "./ConsultationCertificate.css";
 const ConsultationCertificate = () => {
   const [data, setData] = useState(null);
   const [error, setError] = useState("");
-
+  
   const handleSubmit = (event) => {
     event.preventDefault();
     const CC = $("#floatingInput").val();
-
+    
     if (CC) {
       $.ajax({
-        url: "./consulta_certificado.php",
+        url: "http://localhost/aiexocp/aiex-ocp/src/backend/consultas/consulta_certificado.php",
         method: "POST",
         data: { CC },
         success: function (response) {
-          if (response) {
-            setData(response);
+          try {
+            const parsedData = JSON.parse(response);
+            setData(parsedData);
             setError("");
-          } else {
-            setData(null);
-            setError("No se encontraron datos.");
+          } catch (e) {
+            setError("Error al parsear la respuesta del servidor.");
           }
         },
         error: function () {
@@ -57,7 +57,7 @@ const ConsultationCertificate = () => {
       {data && (
         <div>
           <h4>Resultados de Vigilante de Seguridad</h4>
-          {data.vigilante.length > 0 ? (
+          {data.vigilante && data.vigilante.length > 0 ? (
             <table className="table table-bordered">
               <thead>
                 <tr>
@@ -87,7 +87,7 @@ const ConsultationCertificate = () => {
           )}
 
           <h4>Resultados de Otros Alcances</h4>
-          {data.otros.length > 0 ? (
+          {data.otros && data.otros.length > 0 ? (
             <table className="table table-bordered">
               <thead>
                 <tr>
