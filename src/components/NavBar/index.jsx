@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Link } from 'react-router-dom';
 import { GiArchiveRegister } from "react-icons/gi";
+import { RegistrationForm } from "../RegistrationForm";
 import onac from "../../assets/Logo ONAC.png";
 import aiex from "../../assets/Logo AIEX.png";
 import "./NavBar.css";
@@ -10,11 +11,7 @@ const NavBar = ({ showModal }) => {
   const handleButtonClick = () => {
     const content = 
     <div className="container-iframe-navbar w-100">
-      <iframe 
-        src="https://e-learning-ocp.aiex.com.co/login/signup.php" 
-        frameBorder="0" 
-        title="E-learning"
-      ></iframe>
+      <RegistrationForm />
     </div>;
     showModal(content);
   };

@@ -1,0 +1,109 @@
+:root {
+  --aiex-yellow: #F1EC41;
+  --aiex-grey: #F2F4F4;
+  --aiex-white: #FFFFFF;
+  --aiex-dark: #030606;
+}
+
+body {
+  margin: 0;
+}
+
+.form-registro {
+  margin: auto;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+
+.container-form-registro h2 {
+  color: var(--aiex-white);
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px; 
+}
+
+.container-form-registro h3 {
+  color: var(--aiex-white);
+  text-align: center;
+  margin: 0;
+  font-size: 15px;
+  margin-bottom: 20px; 
+}
+
+.contrato {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  margin: 0 4px;
+}
+
+#titulo1 {
+  text-align: center;
+}
+
+#titulo2 {
+  text-align: left;
+}
+
+
+input, textarea, select {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 15px;
+  border: none;
+}
+
+.container-form-registro select,
+.container-form-registro option {
+  background-color: var(--aiex-white);
+  font-size: 15px;
+  color: dimgray;
+}
+
+
+#acepto, #leido {
+  width: 5%;
+}
+
+
+#contrato {
+  resize: none;
+  text-align: justify;
+  white-space: normal;
+}
+
+.codigo-label {
+  color: red;
+}
+
+.container-form-registro p {
+  color: var(--aiex-white);
+  text-align: justify;
+  white-space: normal;  
+  font-size: 9.5px;
+}
+
+.form-check label {
+  color: var(--aiex-white);
+}
+
+#error {
+  background-color:lightcoral;
+  color:black;
+  text-align: center;
+  font-size: 15px;
+}
+
+#btnenviar {
+  background: #4f69ac;
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#btnenviar:hover {
+  cursor: pointer;
+}
