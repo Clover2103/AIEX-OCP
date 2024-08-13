@@ -2,6 +2,7 @@ import React from "./Redes.css";
 import { FaTiktok } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import "./Redes.css";
 
 const RedesFlotantes = () => {
@@ -23,6 +24,12 @@ const RedesFlotantes = () => {
             <div className="row con-re-float" title="Tik Tok">
                 <a href="#" className="cl-p">
                     <FaInstagram className="redes-icon"/>
+                </a>
+            </div>
+
+            <div className="row con-re-float" title="WhatsApp">
+                <a href="#" className="cl-p">
+                    <FaWhatsapp className="redes-icon"/>
                 </a>
             </div>
         </div>

@@ -25,7 +25,7 @@
     border-radius: 5px;
     border: 1px solid var(--aiex-grey);
     width: 47px;
-    height: calc(45px * 3);
+    height: calc(45px * 4);
 }
 
 .cl-p {

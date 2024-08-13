@@ -2,6 +2,7 @@ import React from "react";
 import { FaTiktok } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import isme from "../../assets/Logo ISME.png";
 import onac from "../../assets/footer/Logo ONAC.jpg";
 import "./Footer.css";
@@ -41,6 +42,11 @@ const Footer = () => {
           <div>
             <a href="" target="_blank">
               <FaInstagram className="red-icon"/>
+            </a>
+          </div>
+          <div>
+            <a href="" target="_blank">
+            <FaWhatsapp className="red-icon"/>
             </a>
           </div>
         </div>
