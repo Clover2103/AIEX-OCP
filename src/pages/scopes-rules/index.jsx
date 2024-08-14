@@ -1,11 +1,20 @@
 import React from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { ScopesSliderStatic } from '../../components/ScopesSliderStatic';
+import { BodyRules } from "../../components/BodyRules";
+import image from "../../assets/alcances/slider scopes/Reglas.png";
 
 
 const ScopesRules = () => {
   return (
-    <div className="scopes-rules-body w-100">
-      <h1>Reglas</h1>
+    <div className="scopes-rules-body w-100 mb-5">
+      <ScopesSliderStatic
+        imageSrc={image}
+        title="REGLAS DEL SERVICIO DE CERTIFICACIÓN"
+      />
+      <div className='container mt-5'>
+        <BodyRules/>
+      </div>
+      
     </div>
   );
 };
