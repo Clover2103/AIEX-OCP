@@ -80,14 +80,30 @@ input, textarea, select {
   color: red;
 }
 
-.container-form-registro p {
+.cont-text-el-solicitante p {
   color: var(--aiex-white);
   text-align: justify;
   white-space: normal;  
   font-size: 9.5px;
 }
 
+.cont-text-form-reg p {
+  color: var(--aiex-white);
+  text-align: justify;
+  white-space: normal;  
+  font-size: 14px;
+}
+
 .form-check label {
+  color: var(--aiex-white);
+}
+
+.logo-tabla-form{
+  width: 80px;
+  height: 80px;
+}
+
+.codigo-label-version {
   color: var(--aiex-white);
 }
 
