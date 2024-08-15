@@ -49,3 +49,4 @@ yarn-error.log*
 conectionBDOpen.php
 
 sendEmail.php
+sendEmailPin.php
