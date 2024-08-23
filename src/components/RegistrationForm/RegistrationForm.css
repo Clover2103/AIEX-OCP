@@ -107,6 +107,10 @@ input, textarea, select {
   color: var(--aiex-white);
 }
 
+.d-none {
+  display: none;
+}
+
 #error {
   background-color:lightcoral;
   color:black;
