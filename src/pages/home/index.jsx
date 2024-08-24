@@ -27,7 +27,7 @@ const Home = ({ showModal }) => {
     if (!imageShown) {
       const randomImage = images[Math.floor(Math.random() * images.length)];
       sessionStorage.setItem('imageShown', 'true'); // Marcar que ya se ha mostrado
-      showModal(<img src={randomImage} alt="Imagen aleatoria" />);
+      showModal(<img src={randomImage} style={{ width: '100%', height: '100%' }} alt="Imagen aleatoria" />);
     }
   }, [showModal]);
 

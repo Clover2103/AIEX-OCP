@@ -35,18 +35,18 @@ const Footer = () => {
             </a>
           </div>
           <div>
-            <a href="" target="_blank">
+            <a href="https://www.facebook.com/people/AIEX-SAS/100063556121959/" target="_blank" className="cl-p" >
               <FaFacebook className="red-icon"/>
             </a>
           </div>
           <div>
-            <a href="" target="_blank">
+            <a href="https://www.instagram.com/aiexsas/" target="_blank" className="cl-p">
               <FaInstagram className="red-icon"/>
             </a>
           </div>
           <div>
-            <a href="" target="_blank">
-            <FaWhatsapp className="red-icon"/>
+            <a href="dm.wa.link/3i9kxz" target="_blank" className="cl-p">
+              <FaWhatsapp className="red-icon"/>
             </a>
           </div>
         </div>
