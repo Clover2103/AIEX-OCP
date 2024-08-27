@@ -20,6 +20,7 @@ import { NavBar } from '../components/NavBar';
 import { Footer } from '../components/Footer';
 import { Modal } from '../components/Modal';
 import { RedesFlotantes } from '../components/Redes';
+import { ScrollToTop } from '../components/ScrollToTop';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
 
   return (
     <div>
+      <ScrollToTop />
       {location.pathname !== "/" && <NavBar showModal={showModal} />}
       {location.pathname !== "/" && <RedesFlotantes />}
       <Routes>

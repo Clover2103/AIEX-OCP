@@ -7,16 +7,14 @@ import { Beginning } from "../../components/Beginning"
 import { Policies } from "../../components/Policies";
 import { OurAllies } from "../../components/OurAllies";
 
-import image1 from '../../assets/inicio/allies/logo-aiexsst.png';
-import image2 from '../../assets/inicio/allies/logo-clubdetiro.png';
-import image3 from '../../assets/inicio/allies/logo-funhumac.png';
-import image4 from '../../assets/inicio/allies/logo-funhumac.png';
-import image5 from '../../assets/inicio/allies/logo-vigiempleo.png';
-import image6 from '../../assets/inicio/allies/logo-vialseguridad.png';
-import image7 from '../../assets/inicio/allies/aliados.png';
-import image8 from '../../assets/inicio/allies/logo-funhumac.png';
+import image1 from '../../assets/inicio/modalHome/imagen1.png';
+import image2 from '../../assets/inicio/modalHome/imagen2.png';
+import image3 from '../../assets/inicio/modalHome/imagen3.png';
+import image4 from '../../assets/inicio/modalHome/imagen4.png';
+import image5 from '../../assets/inicio/modalHome/imagen5.png';
+import image6 from '../../assets/inicio/modalHome/imagen6.png';
 
-const images = [image1, image2, image3, image4, image5, image6, image7, image8]; // Array de imágenes
+const images = [image1, image2, image3, image4, image5, image6]; // Array de imágenes
 
 const Home = ({ showModal }) => {
 
@@ -35,7 +33,7 @@ const Home = ({ showModal }) => {
   return (
     <div>
       <HomeSlider />
-      <HomeAboutUs showModal={showModal}/>
+      <HomeAboutUs showModal={showModal} id="homeAboutUs"/>
       <MyV />
       <Values />
       <Beginning />

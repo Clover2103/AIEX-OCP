@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 import { FaTiktok } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
@@ -71,13 +72,13 @@ const Footer = () => {
 
       <div className="cont-area col-md-4">
         <div className="cont-links">
-          <p>Politicas de la organización</p>
-          <p>¿Quienes somos?</p>
-          <p>Nuestros alcances</p>
-          <p>Contactanos</p>
-          <p>Derechos y deberes</p>
-          <p>Reglas del servicio de certificación</p>
-          <p>Quejas / Apelaciónes</p>
+          <p><a href="/policies">Politicas de la organización</a></p>
+          <p><a href="/home#homeAboutUs">¿Quienes somos?</a></p>
+          <p><a href="/scopes#scopesBody">Nuestros alcances</a></p>
+          <p><a href="/contact">Contactenos</a></p>
+          <p><a href="/scopes-r-and-d">Derechos y deberes</a></p>
+          <p><a href="/scopes-rules">Reglas del servicio de certificación</a></p>
+          <p><a href="/contact">Quejas / Apelaciónes</a></p>
         </div>
       </div>
       

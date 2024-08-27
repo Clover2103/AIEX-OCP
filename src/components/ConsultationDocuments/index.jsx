@@ -18,6 +18,8 @@ const documents = [
   { title: "Suspensión, Retiro y Reducción del alcance", file: SRRAPDF7 }
 ];
 
+
+
 const ConsultationDocuments = () => {
   const [activeKey, setActiveKey] = useState(null);
 

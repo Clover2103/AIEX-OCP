@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import $ from "jquery";
 import Swal from "sweetalert2";
+
+const sendContact = process.env.REACT_APP_SEND_EMAIL_URL;
 
 const ContactForm = () => {
 
@@ -19,9 +20,9 @@ const ContactForm = () => {
     });
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-
+  
     // Validaciones previas usando SweetAlert
     if (!formData.name.trim()) {
       Swal.fire({
@@ -63,49 +64,63 @@ const ContactForm = () => {
       });
       return;
     }
-
+  
     // Mostrar mensaje de carga
-    Swal.fire({
-      title: 'Enviando...',
-      text: 'Por favor, espera mientras enviamos tu mensaje.',
-      allowOutsideClick: false,
-      didOpen: () => {
-        Swal.showLoading();
+  Swal.fire({
+    title: 'Enviando...',
+    text: 'Por favor, espera mientras enviamos tu mensaje.',
+    allowOutsideClick: false,
+    didOpen: () => {
+      Swal.showLoading();
+    },
+  });
+
+  try {
+    const response = await fetch(`${sendContact}`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
       },
+      body: JSON.stringify(formData),
     });
 
-    // Si todas las validaciones pasan, enviar la solicitud
-    $.ajax({
-      url: "http://localhost/aiexocp/aiex-ocp/src/backend/send_email/sendEmail.php",
-      method: "POST",
-      contentType: "application/json",
-      data: JSON.stringify(formData),
-      success: function (response) {
-        Swal.close(); // Cerrar el mensaje de carga
-        if (response.status === "success") {
-          Swal.fire({
-            icon: 'success',
-            title: 'Éxito',
-            text: 'Correo enviado exitosamente.',
-          });
-        } else {
-          Swal.fire({
-            icon: 'success',
-            title: '¡Estupendo!',
-            text: 'tu mensaje a sido enviado exitosamente.',
-          });
-        }
-      },
-      error: function () {
-        Swal.close(); // Cerrar el mensaje de carga
-        Swal.fire({
-          icon: 'error',
-          title: 'Error',
-          text: 'Error al enviar el correo.',
-        });
-      },
+    // Verifica si la respuesta del servidor es válida
+    if (!response.ok) {
+      throw new Error('Error en la respuesta del servidor');
+    }
+
+    // Intenta parsear la respuesta a JSON
+    const data = await response.json();
+
+    // Cierra el mensaje de carga
+    Swal.close();
+
+    // Verifica si el servidor retornó "success"
+    if (data.status === "success") {
+      Swal.fire({
+        icon: 'success',
+        title: '¡Estupendo!',
+        text: 'Tu mensaje ha sido enviado exitosamente.',
+      });
+    } else {
+      // Si no es "success", asume que hay un error
+      Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: data.message || 'Error desconocido al enviar el correo.',
+      });
+    }
+  } catch (error) {
+    // Maneja cualquier error durante la solicitud
+    Swal.close();
+    Swal.fire({
+      icon: 'error',
+      title: 'Error',
+      text: error.message || 'Error al enviar el correo.',
     });
+  }
   };
+  
 
   return (
     <div className="container container-form-contact mt-5 mb-5">
@@ -121,9 +136,9 @@ const ContactForm = () => {
               onChange={handleInputChange}
             >
               <option value="">--</option>
-              <option value="contacto">Contacto</option>
-              <option value="queja">Queja</option>
-              <option value="peticion">Petición</option>
+              <option value="SOLICITUD">SOLICITUD</option>
+              <option value="QUEJA">QUEJA</option>
+              <option value="APELACION">APELACIÓN</option>
               {/* Agrega más opciones según sea necesario */}
             </select>
             <label htmlFor="solicitud">Tipo de Solicitud</label>

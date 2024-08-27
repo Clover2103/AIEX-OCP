@@ -12,7 +12,7 @@
   grid-template-columns: repeat(3, 1fr);
   text-align: center;
   font-size: 17px;
-  min-height: 550px;
+  min-height: 90vh;
 }
 
 .cont-area {
@@ -61,7 +61,6 @@
   height: 100%;
 }
 
-
 .redes {
   display: flex;
   justify-content: center;
@@ -93,10 +92,14 @@
   justify-content: space-around;
 }
 
-.cont-links p {
+.cont-links p,
+.cont-links a {
+  color: var(--aiex-white);
+  text-decoration: none;
   cursor: pointer;
 }
 
-.cont-links p:hover {
+.cont-links p:hover,
+.cont-links a:hover {
   color: var(--aiex-yellow);
 }

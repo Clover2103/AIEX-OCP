@@ -21,7 +21,7 @@ const schemesData = [
 
 const ScopesMain = () => {
   return (
-    <div className='cont-scopes-main w-100'>
+    <div className='cont-scopes-main w-100' id='scopesBody'>
       <div className='scopes-main-title text-center mt-4 mb-3'>
         <h3>NUESTROS ESQUEMAS</h3>
       </div>

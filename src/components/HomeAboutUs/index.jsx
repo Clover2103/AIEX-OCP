@@ -27,7 +27,7 @@ const HomeAboutUs = ( { showModal } ) => {
   };
 
   return (
-    <div className="homeAboutUs" ref={sectionRef}>
+    <div className="homeAboutUs" id="homeAboutUs" ref={sectionRef}>
       <div className="body-about row g-2">
         <div className="cont-about-img col-md" ref={imgRef}>
           <div className="cont-img">
