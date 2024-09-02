@@ -46,7 +46,4 @@ yarn-error.log*
 
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode
 
-conectionBDOpen.php
-
-sendEmail.php
-sendEmailPin.php
+build
