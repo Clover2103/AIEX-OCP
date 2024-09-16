@@ -1,0 +1,75 @@
+:root {
+  --aiex-yellow: #F1EC41;
+  --aiex-grey: #F2F4F4;
+  --aiex-white: #FFFFFF;
+  --aiex-dark: #030606;
+}
+
+.scopes-processes-body {
+  width: 100%;
+  min-height: 275px;
+  margin-bottom: 15px;
+}
+
+.scopes-processes-descrip {
+  min-height: 275px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--aiex-grey);
+  border-bottom: 20px solid #a8a8a8;
+  text-align: center;
+}
+
+.scopes-processes {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scopes-processes a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-size: bold;
+}
+
+.scopes-processes button {
+  width: 200px;
+  height: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: var(--aiex-yellow);
+  color: var(--aiex-dark);
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+}
+
+.scopes-processes a:hover .processes-icon-cont,
+.scopes-processes a:hover button {
+  background-color: var(--aiex-dark);
+  color: var(--aiex-white);
+  transition: 0.5s;
+}
+
+.processes-icon-cont {
+  height: 74px;
+  width: 74px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--aiex-yellow);
+  color: var(--aiex-dark);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.processes-icon {
+  font-size: 50px;
+}

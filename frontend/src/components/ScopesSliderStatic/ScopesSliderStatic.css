@@ -1,0 +1,40 @@
+.scopes-slider-f-a-body {
+  margin-top: 6px;
+  min-height: 320px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.scopes-slider-f-a-body img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 50;
+}
+
+.scopes-slider-f-a-body h1 {
+  z-index: 100;
+  color: var(--aiex-white);
+  font-weight: bold;
+  text-shadow: 4px 4px 6px var(--aiex-dark);
+}
+
+.scopes-slider-f-a-body p {
+  z-index: 100;
+  color: var(--aiex-dark);
+  font-weight: bold;
+}
+
+.back {
+  background-color: var(--aiex-yellow);
+  position: absolute;
+  z-index: 80;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}

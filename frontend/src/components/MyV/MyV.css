@@ -1,0 +1,54 @@
+:root {
+  --aiex-yellow: #F1EC41;
+  --aiex-grey: #F2F4F4;
+  --aiex-white: #FFFFFF;
+  --aiex-dark: #030606;
+}
+
+.body-myv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.container-myv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+
+.container-mision {
+  background-color: var(--aiex-yellow);
+  color: var(--aiex-dark);
+}
+
+.cont-mision {
+  border-top: 3px solid var(--aiex-dark);
+  border-right: 3px solid var(--aiex-dark);
+}
+
+.container-vision {
+  background-color: var(--aiex-dark);
+  color: var(--aiex-white);
+}
+
+.cont-vision {
+  border-left: 3px solid var(--aiex-white);
+  border-bottom: 3px solid var(--aiex-white);
+}
+
+.cont-myv {
+  width: 450px;
+  height: 450px;
+  margin: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 8px;
+}

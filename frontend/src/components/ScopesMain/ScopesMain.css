@@ -1,0 +1,45 @@
+:root {
+  --aiex-yellow: #F1EC41;
+  --aiex-grey: #F2F4F4;
+  --aiex-white: #FFFFFF;
+  --aiex-dark: #030606;
+}
+
+.cont-scopes-main {
+  padding: 20px;
+}
+
+.scopes-main-title h3{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.schemes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.scheme-item {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scheme-image {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.scheme-image:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 767.98px) {
+  .scheme-item {
+    flex: 1 0 100%;
+    margin-bottom: 15px;
+  }
+}
