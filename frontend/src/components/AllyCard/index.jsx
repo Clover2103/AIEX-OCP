@@ -15,4 +15,4 @@ const AllyCard = ({ src, alt, url, desc }) => (
   </div>
 );
 
-export { AllyCard }
+export { AllyCard };

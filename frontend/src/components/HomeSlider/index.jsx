@@ -1,11 +1,11 @@
 import React, { useRef, useState } from 'react';
-import './HomeSlider.css';
 import img1 from '../../assets/inicio/slider/img 1.jpg';
 import img2 from '../../assets/inicio/slider/img 2.jpg';
 import img3 from '../../assets/inicio/slider/img 3.jpg';
 import img4 from '../../assets/inicio/slider/img 4.jpg';
 import img5 from '../../assets/inicio/slider/img 5.png';
 import { useSlider } from '../../hooks/useSlider';
+import './HomeSlider.css';
 
 const images = [img1, img2, img3, img4, img5];
 
@@ -67,5 +67,3 @@ const HomeSlider = () => {
 };
 
 export { HomeSlider };
-
-

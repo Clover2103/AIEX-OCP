@@ -10,11 +10,14 @@ import { OurAllies } from "../../components/OurAllies";
 import image1 from '../../assets/inicio/modalHome/imagen1.png';
 import image2 from '../../assets/inicio/modalHome/imagen2.png';
 import image3 from '../../assets/inicio/modalHome/imagen3.png';
-import image4 from '../../assets/inicio/modalHome/imagen4.png';
-import image5 from '../../assets/inicio/modalHome/imagen5.png';
-import image6 from '../../assets/inicio/modalHome/imagen6.png';
+import image4 from '../../assets/inicio/modalHome/imagen4.jpg';
 
-const images = [image1, image2, image3, image4, image5, image6]; // Array de imágenes
+const imagesWithLinks = [
+  { src: image4, link: "https://forms.gle/XjDmsstiJZJAAuwW6" },
+  { src: image4, link: "https://forms.gle/XjDmsstiJZJAAuwW6" },
+  { src: image4, link: "https://forms.gle/XjDmsstiJZJAAuwW6" },
+  { src: image4, link: "https://forms.gle/XjDmsstiJZJAAuwW6" },
+];
 
 const Home = ({ showModal }) => {
 
@@ -23,9 +26,15 @@ const Home = ({ showModal }) => {
     const imageShown = sessionStorage.getItem('imageShown');
 
     if (!imageShown) {
-      const randomImage = images[Math.floor(Math.random() * images.length)];
-      sessionStorage.setItem('imageShown', 'true'); // Marcar que ya se ha mostrado
-      showModal(<img src={randomImage} style={{ width: '100%', height: '100%' }} alt="Imagen aleatoria" />);
+      const randomImage = imagesWithLinks[Math.floor(Math.random() * imagesWithLinks.length)];
+      sessionStorage.setItem('imageShown', 'true');
+
+      showModal(
+        <a href={randomImage.link} target="_blank" rel="noopener noreferrer">
+          <img src={randomImage.src} style={{ width: '100%' }} alt="Imagen aleatoria" />
+          <button className="w-100 btn btn-danger text-white ">CONOCER MAS</button>
+        </a>
+      );
     }
   }, [showModal]);
 

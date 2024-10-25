@@ -68,12 +68,4 @@
   cursor: pointer;
   width: 100%;
   font-size: 30px;
-  /* position: absolute;
-  width: 100%;
-  text-align: center;
-  background-color: var(--aiex-dark);
-  color: var(--aiex-white);
-  cursor: pointer;
-  border: none;
-  z-index: 150; */
 }

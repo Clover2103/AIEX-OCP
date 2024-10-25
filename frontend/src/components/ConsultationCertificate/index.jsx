@@ -3,8 +3,6 @@ import "./ConsultationCertificate.css";
 
 const sershCertificate = process.env.REACT_APP_SERSH_CERTIFICATE;
 
-console.log("URL de la solicitud:", sershCertificate);
-
 const ConsultationCertificate = () => {
   const [data, setData] = useState(null);
   const [error, setError] = useState("");
