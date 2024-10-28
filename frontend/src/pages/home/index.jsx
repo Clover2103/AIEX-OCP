@@ -10,13 +10,11 @@ import { OurAllies } from "../../components/OurAllies";
 import image1 from '../../assets/inicio/modalHome/imagen1.png';
 import image2 from '../../assets/inicio/modalHome/imagen2.png';
 import image3 from '../../assets/inicio/modalHome/imagen3.png';
-import image4 from '../../assets/inicio/modalHome/imagen4.jpg';
 
 const imagesWithLinks = [
-  { src: image4, link: "https://forms.gle/XjDmsstiJZJAAuwW6" },
-  { src: image4, link: "https://forms.gle/XjDmsstiJZJAAuwW6" },
-  { src: image4, link: "https://forms.gle/XjDmsstiJZJAAuwW6" },
-  { src: image4, link: "https://forms.gle/XjDmsstiJZJAAuwW6" },
+  { src: image1, link: "https://api.whatsapp.com/send?phone=573165294689" },
+  { src: image2, link: "https://api.whatsapp.com/send?phone=573054009393" },
+  { src: image3, link: "https://api.whatsapp.com/send?phone=573054009393" },
 ];
 
 const Home = ({ showModal }) => {
@@ -31,8 +29,8 @@ const Home = ({ showModal }) => {
 
       showModal(
         <a href={randomImage.link} target="_blank" rel="noopener noreferrer">
-          <img src={randomImage.src} style={{ width: '100%' }} alt="Imagen aleatoria" />
-          <button className="w-100 btn btn-danger text-white ">CONOCER MAS</button>
+          <img src={randomImage.src} style={{ width: '100%', height: '95%' }} alt="Imagen aleatoria" />
+          <button className="w-100 btn btn-dark text-white ">CONOCER MAS</button>
         </a>
       );
     }

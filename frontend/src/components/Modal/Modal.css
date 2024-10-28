@@ -29,8 +29,7 @@
 
 .modal-cont {
   background-color: var(--aiex-white);
-  /* height: 90vh; */
-  max-height: 90vh;
+  height: 95vh;
   padding: 15px;
   border-radius: 8px;
 }
