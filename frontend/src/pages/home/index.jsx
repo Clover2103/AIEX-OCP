@@ -1,7 +1,7 @@
 import React , { useEffect } from "react";
 import { HomeSlider } from "../../components/HomeSlider";
 import { HomeAboutUs } from "../../components/HomeAboutUs";
-import { MyV } from "../../components/MyV";
+import { HomeMAndV } from "../../components/HomeMAndV"
 import { Values } from "../../components/Values";
 import { Beginning } from "../../components/Beginning"
 import { Policies } from "../../components/Policies";
@@ -41,7 +41,7 @@ const Home = ({ showModal }) => {
     <div>
       <HomeSlider />
       <HomeAboutUs showModal={showModal} id="homeAboutUs"/>
-      <MyV />
+      <HomeMAndV />
       <Values />
       <Beginning />
       <Policies />
