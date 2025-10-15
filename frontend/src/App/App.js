@@ -27,7 +27,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [modalContent, setModalContent] = useState(null);
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 790);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 890);
   const location = useLocation();
 
   const showModal = (content) => {
@@ -42,7 +42,7 @@ function App() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
+      setIsMobile(window.innerWidth < 890);
     };
 
     window.addEventListener('resize', handleResize);

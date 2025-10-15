@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 120px;
+  height: 150px;
   border-bottom: 1.5px solid var(--aiex-yellow);
   box-shadow: 0px 6px 6px var(--aiex-yellow);
   z-index: 100;
@@ -17,6 +17,7 @@
 
 .navBarIzq {
   display: flex;
+  gap: 18px;
 }
 
 .onac-logo-navbar img,
@@ -25,11 +26,11 @@
 }
 
 .aiex-logo-navbar img{
-  height: 80px;
+  height: 130px;
 }
 
 .onac-logo-navbar img{
-  height: 95px;
+  height: 145px;
 }
 
 .navBar__links {

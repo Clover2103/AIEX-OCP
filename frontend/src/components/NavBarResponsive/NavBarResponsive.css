@@ -5,7 +5,7 @@
 
 .navBarResponsive__header {
   display: flex;
-  height: 120px;
+  height: 150px;
   justify-content: space-between;
   align-items: center;
   padding: 0 24px;
@@ -14,7 +14,8 @@
 .navBarResponsive__logo {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+  gap: 12px;
 }
 
 .onac-logo-navbar img,
@@ -23,11 +24,11 @@
 }
 
 .aiex-logo-navbar img{
-  height: 80px;
+  height: 120px;
 }
 
 .onac-logo-navbar img{
-  height: 95px;
+  height: 145px;
 }
 
 .menu-toggle {
