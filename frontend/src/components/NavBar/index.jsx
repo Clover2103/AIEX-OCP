@@ -21,7 +21,7 @@ const NavBar = ({ showModal }) => {
     <div className="navBar">
       <div className="navBarIzq gap-2">
         <div className="navBar__logo aiex-logo-navbar">
-          <Link to="/home" style={{ textDecoration: 'none' }}>
+          <Link to="/" style={{ textDecoration: 'none' }}>
             <img src={aiex} alt="AIEX" />
           </Link>
         </div>
@@ -33,7 +33,7 @@ const NavBar = ({ showModal }) => {
       </div>
       
       <div className="navBar__links gap-3">
-        <Link to="/home">INICIO</Link>
+        <Link to="/">INICIO</Link>
         <Link to="/scopes">ALCANCES</Link>
         <Link to="/consultation">CONSULTAS</Link>
         <Link to="/contact">CONTACTO</Link>

@@ -28,7 +28,7 @@ const NavBarResponsive = ({ showModal }) => {
       <div className="navBarResponsive__header">
         <div className="navBarResponsive__logo">
           <div className="navBarResponsive__logo aiex-logo-navbar">
-            <Link to="/home">
+            <Link to="/">
               <img src={aiex} alt="AIEX" />
             </Link>
           </div>
@@ -45,7 +45,7 @@ const NavBarResponsive = ({ showModal }) => {
 
       {isMenuOpen && (
         <div className="navBarResponsive__links">
-          <Link to="/home" onClick={toggleMenu}>INICIO</Link>
+          <Link to="/" onClick={toggleMenu}>INICIO</Link>
           <Link to="/scopes" onClick={toggleMenu}>ALCANCES</Link>
           <Link to="/consultation" onClick={toggleMenu}>CONSULTAS</Link>
           <Link to="/contact" onClick={toggleMenu}>CONTACTO</Link>

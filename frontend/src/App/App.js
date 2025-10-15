@@ -52,15 +52,10 @@ function App() {
   return (
     <div>
       <ScrollToTop />
-      {location.pathname !== "/" && (
-        isMobile ? 
-          <NavBarResponsive showModal={showModal} /> : 
-          <NavBar showModal={showModal} />
-      )}
-      {location.pathname !== "/" && <RedesFlotantes />}
+      {isMobile ? <NavBarResponsive showModal={showModal} /> : <NavBar showModal={showModal} />}
+      <RedesFlotantes />
       <Routes>
-        <Route path="/" element={<Preview />} />
-        <Route path="/home" element={<Home showModal={showModal} />} />
+        <Route path="/" element={<Home showModal={showModal} />} />
         <Route path="/policies" element={<Policies />} />
         <Route path="/scopes" element={<Scopes />} />
         <Route path="/consultation" element={<Consultation />} />
@@ -76,7 +71,7 @@ function App() {
         <Route path="/scopes-r-and-d" element={<ScopesRAndD />} />
         <Route path="/scopes-f-a" element={<ScopesFA showModal={showModal} />} />
       </Routes>
-      {location.pathname !== "/" && <Footer />}
+      <Footer />
       <Modal isVisible={isModalVisible} hideModal={hideModal} content={modalContent} />
     </div>
   );
