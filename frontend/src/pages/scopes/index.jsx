@@ -7,7 +7,7 @@ import { ScopesProcesses } from "../../components/ScopesProcesses";
 const Scopes = () => {  
   return ( 
     <div>
-      <ScopesSlider />
+      {/* <ScopesSlider /> */}
       <ScopesMain />
       <ScopesProcesses />
     </div>

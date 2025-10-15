@@ -7,6 +7,7 @@ import medios from "../../assets/alcances/schemes scopes/esquema-operador-medios
 import AOEA from "../../assets/alcances/schemes scopes/esquema-AOEA.png";
 import GISC from "../../assets/alcances/schemes scopes/esquema-GISC.png";
 import riesgos from "../../assets/alcances/schemes scopes/esquema-riesgos.png";
+import certificado from "../../assets/alcances/certificate.jpg";
 import './ScopesMain.css';
 
 const schemesData = [
@@ -35,6 +36,10 @@ const ScopesMain = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className='text-center'>
+        <h2 className='mt-5'>Modelo de nuestro certificado</h2>
+        <img src={certificado} alt="Modelo certificado aiex sas" className='img-certificate'/>
       </div>
     </div>
   );
