@@ -5,7 +5,7 @@ import { HomeMAndV } from "../../components/HomeMAndV"
 import { Values } from "../../components/Values";
 import { Beginning } from "../../components/Beginning"
 import { Policies } from "../../components/Policies";
-import { OurAllies } from "../../components/OurAllies";
+import { HomeAllies } from "../../components/HomeAllies";
 
 import image1 from '../../assets/inicio/modalHome/imagen1.png';
 import image2 from '../../assets/inicio/modalHome/imagen2.png';
@@ -45,7 +45,7 @@ const Home = ({ showModal }) => {
       <Values />
       <Beginning />
       <Policies />
-      <OurAllies />
+      <HomeAllies />
     </div>
   );
 };
