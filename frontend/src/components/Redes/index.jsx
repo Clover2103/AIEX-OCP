@@ -9,11 +9,6 @@ const RedesFlotantes = () => {
     return (
     <div className="redes-flotantes">
         <div className="re-cont-flotantes">
-            <div className="row con-re-float" title="Instagram">
-                <a href="#" className="cl-p">
-                    <FaTiktok />
-                </a>
-            </div>
 
             <div className="row con-re-float" title="Facebook">
                 <a href="https://www.facebook.com/people/AIEX-SAS/100063556121959/" target="_blank" className="cl-p" >
@@ -28,7 +23,7 @@ const RedesFlotantes = () => {
             </div>
 
             <div className="row con-re-float" title="WhatsApp">
-                <a href="dm.wa.link/3i9kxz" target="_blank" className="cl-p">
+                <a href="https://api.whatsapp.com/send?phone=573165294689" target="_blank" className="cl-p">
                     <FaWhatsapp className="redes-icon"/>
                 </a>
             </div>

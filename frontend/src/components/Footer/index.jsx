@@ -13,10 +13,22 @@ const Footer = () => {
     <div className="footer row g-3">
 
       <div className="cont-area col-md-4">
-        <div className="cont-acred">
-          <p>Acreditado por: </p>
-          <div className="cont-logo-footer logo-footer-onac">
-            <img src={onac} alt="ONAC" />
+
+        <div className="redes">
+          <div>
+            <a href="https://www.facebook.com/people/AIEX-SAS/100063556121959/" target="_blank" className="cl-p" >
+              <FaFacebook className="red-icon"/>
+            </a>
+          </div>
+          <div>
+            <a href="https://www.instagram.com/aiexsas/" target="_blank" className="cl-p">
+              <FaInstagram className="red-icon"/>
+            </a>
+          </div>
+          <div>
+            <a href="https://api.whatsapp.com/send?phone=573165294689" target="_blank" className="cl-p">
+              <FaWhatsapp className="red-icon"/>
+            </a>
           </div>
         </div>
 
@@ -29,28 +41,7 @@ const Footer = () => {
       </div>
 
       <div className="cont-area col-md-4">
-        <div className="redes">
-          <div>
-            <a href="" target="_blank">
-              <FaTiktok className="red-icon"/>
-            </a>
-          </div>
-          <div>
-            <a href="https://www.facebook.com/people/AIEX-SAS/100063556121959/" target="_blank" className="cl-p" >
-              <FaFacebook className="red-icon"/>
-            </a>
-          </div>
-          <div>
-            <a href="https://www.instagram.com/aiexsas/" target="_blank" className="cl-p">
-              <FaInstagram className="red-icon"/>
-            </a>
-          </div>
-          <div>
-            <a href="dm.wa.link/3i9kxz" target="_blank" className="cl-p">
-              <FaWhatsapp className="red-icon"/>
-            </a>
-          </div>
-        </div>
+        
         <div>
           <div>
             <p>NUESTRA UBICACIÓN</p>
