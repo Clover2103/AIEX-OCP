@@ -1,13 +1,14 @@
 import React, { useRef, useState } from 'react';
-import img1 from '../../assets/inicio/slider/img 1.jpg';
-import img2 from '../../assets/inicio/slider/img 2.jpg';
-import img3 from '../../assets/inicio/slider/img 3.jpg';
-import img4 from '../../assets/inicio/slider/img 4.jpg';
+import img1 from '../../assets/inicio/slider/img 1.png';
+import img2 from '../../assets/inicio/slider/img 2.png';
+import img3 from '../../assets/inicio/slider/img 3.png';
+import img4 from '../../assets/inicio/slider/img 4.png';
 import img5 from '../../assets/inicio/slider/img 5.png';
+import img6 from '../../assets/inicio/slider/img 6.png';
 import { useSlider } from '../../hooks/useSlider';
 import './HomeSlider.css';
 
-const images = [img1, img2, img3, img4, img5];
+const images = [img1, img2, img3, img4, img5, img6];
 
 const HomeSlider = () => {
   
