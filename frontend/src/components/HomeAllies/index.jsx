@@ -36,7 +36,7 @@ const HomeAllies = () => {
     <div className="bodyHomeAllies">
       <div className="alliesSlider mb-5" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <div className="contAlliesSlider">
-          <button className="navBtnAward prevBtnAward" onClick={scrollLeft}>&#10094;</button>
+          <button className="navBtnAllies prevBtnAllies" onClick={scrollLeft}>&#10094;</button>
           <div className="sliderAllies" ref={sliderRef}>
             {images.map((img, index) => {
               const ally = alliesData[index];
