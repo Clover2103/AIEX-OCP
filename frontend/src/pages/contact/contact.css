@@ -1,0 +1,28 @@
+:root {
+  --aiex-yellow: #F1EC41;
+  --aiex-grey: #F2F4F4;
+  --aiex-white: #FFFFFF;
+  --aiex-dark: #030606;
+}
+
+.body-cont-form {
+  background-color: var(--aiex-grey); /* ¡Esencial para que position: absolute funcione! */
+  min-height: 800px;
+}
+
+.container-cont-form {
+  position: absolute;
+  background-color: var(--aiex-dark);
+  color: var(--aiex-white);
+  border-radius: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 300px; 
+  z-index: 200;
+}
+
+@media screen and (max-width: 768px) {
+  .body-cont-form {
+    min-height : 1000px
+  }
+}

@@ -1,26 +1,50 @@
-.container-form-contact {
-  max-width: 600px;
-}
-
-.body-form-contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%; /* Ajusta el width según tus necesidades */
-}
-
-.msg-contact {
-  height: 250px;
-}
-
-form {
-  width: 100%; /* Asegura que el formulario tome el 100% del contenedor */
-}
-
-.msg-contact {
-  height: 250px; /* Ajusta la altura del textarea */
+:root {
+  --aiex-yellow: #F1EC41;
+  --aiex-grey: #F2F4F4;
+  --aiex-white: #FFFFFF;
+  --aiex-dark: #030606;
 }
 
 textarea.form-control {
-  resize: none; /* Desactiva el redimensionamiento manual del textarea */
+  resize: none;
+}
+
+.info-contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.info-contact-form h3{
+  border-bottom: 2px solid #ffffff;
+  max-width: 300px;
+  padding: 12px;
+}
+
+.info-contact-form p:hover {
+  color: var(--aiex-yellow);
+  cursor: pointer;
+}
+
+.body-form-contact {
+  background-color: var(--aiex-grey);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-cont-form {
+  width: 95%;
+}
+
+.icon-info-form {
+  color: var(--aiex-yellow);
+  width: 25px;
+  height: 25px;
 }

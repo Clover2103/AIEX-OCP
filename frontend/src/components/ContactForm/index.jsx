@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import "./ContactForm.css"
+import { FaLocationDot } from "react-icons/fa6";
+import { FaPhoneAlt } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
 import Swal from "sweetalert2";
 
 const sendContact = process.env.REACT_APP_SEND_EMAIL_URL;
@@ -123,11 +127,21 @@ const ContactForm = () => {
   
 
   return (
-    <div className="container container-form-contact mt-5 mb-5">
-      <div className="body-form-contact">
-        <form onSubmit={handleSubmit}>
+    <div className="container container-form-contact row g-2 mt-5 mb-5">
+      <div className="col-md info-contact-form">
+        <div>
+          <h3>Contáctanos</h3>
+        </div>
+        <div>
+          <p><FaLocationDot className="icon-info-form"/> Calle 75a #24-65, Bogotá DC</p>
+          <p><FaPhoneAlt className="icon-info-form"/> +57 316 5294689</p>
+          <p><IoIosMail className="icon-info-form"/>certificacionpersonas@aiex.com.co</p>
+        </div>
+      </div>
+      <div className="body-form-contact col-md">
+        <form onSubmit={handleSubmit} className="w-100 form-container">
 
-          <div className="form-floating mb-2">
+          <div className="form-floating mb-2 input-cont-form">
             <select
               className="form-select"
               id="solicitud"
@@ -144,7 +158,7 @@ const ContactForm = () => {
             <label htmlFor="solicitud">Tipo de Solicitud</label>
           </div>
 
-          <div className="form-floating mb-2">
+          <div className="form-floating mb-2 input-cont-form">
             <input
               className="form-control"
               id="name"
@@ -156,7 +170,7 @@ const ContactForm = () => {
             <label htmlFor="name">Nombre</label>
           </div>
 
-          <div className="form-floating mb-2">
+          <div className="form-floating mb-2 input-cont-form">
             <input
               className="form-control"
               id="email"
@@ -168,7 +182,7 @@ const ContactForm = () => {
             <label htmlFor="email">Email</label>
           </div>
 
-          <div className="form-floating mb-2">
+          <div className="form-floating mb-2 input-cont-form">
             <input
               className="form-control"
               id="subject"
@@ -180,11 +194,12 @@ const ContactForm = () => {
             <label htmlFor="subject">Asunto</label>
           </div>
 
-          <div className="form-floating mb-2 msg-contact">
+          <div className="form-floating mb-2 input-cont-form">
             <textarea
               className="form-control "
               id="message"
               type="text"
+              style={{height: "150px"}}
               name="message"
               value={formData.message}
               onChange={handleInputChange}
@@ -192,7 +207,7 @@ const ContactForm = () => {
             <label htmlFor="message">Mensaje</label>
           </div>
 
-          <button className="w-100 btn btn-lg btn-dark" type="submit">Enviar</button>
+          <button className="btn btn-lg btn-dark input-cont-form" type="submit">Enviar</button>
 
         </form>
       </div>
