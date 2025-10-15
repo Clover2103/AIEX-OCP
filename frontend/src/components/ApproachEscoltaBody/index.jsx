@@ -126,8 +126,6 @@ const ApproachEscoltaBody = () => {
                   <tr><td>Ejercicio informe de caso relacionado con la NSCL: 260401039 - V2 - 16/11/2022 - Proteger personas según normativa y esquemas de seguridad privada.</td></tr>
                   <tr><td>Ejercicio de selección de informe, relacionado con la NSCL 260401048 - V1 - 07/03/2023 - Evaluar riesgos del protegido de acuerdo con metodología técnica y normativa de seguridad y vigilancia.</td></tr>
                   <tr><td>Ejercicio informe de caso relacionado con la NSCL: 260401048 - V1 - 07/03/2023 - Evaluar riesgos del protegido de acuerdo con metodología técnica y normativa de seguridad y vigilancia.</td></tr>
-                  <tr><td>Ejercicio de Crucigrama con quince (15) definiciones relacionadas con la actividad del Escolta</td></tr>
-                  <tr><td>Ejercicio de Sopa de letras en el que el candidato deberá identificar veinte (20) palabras relacionadas con la labor del Escolta.</td></tr>
                 </tbody>
               </table>
               <li>Resultados y observaciones: Revisión y calificación de los requisitos de competencia por parte del examinador designado; el candidato deberá obtener un resultado mayor o igual (>=) a setenta (70) puntos en la sumatoria de las dos fases para aprobar. Si el candidato al cuantificar las etapas de la evaluación según la ponderación definida está por debajo del umbral, tendrá noventa (90) días calendario para volver a aplicar el esquema, la cual será programada por el organismo.</li>

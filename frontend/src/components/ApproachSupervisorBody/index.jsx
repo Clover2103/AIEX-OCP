@@ -115,8 +115,6 @@ const ApproachSupervisorBody = () => {
                   </tr>
                   <tr><td>Ejercicio informe de caso relacionado con la NSCL: 260401038 - V2 - 16/11/2022 - Supervisar servicios de seguridad de acuerdo con normativa.</td></tr>
                   <tr><td>Ejercicio de selección de informes, relacionado con la Norma sectorial de competencia laboral de referencia.</td></tr>
-                  <tr><td>Ejercicio de Crucigrama con dieciséis (16) definiciones relacionadas con la actividad del Supervisor.</td></tr>
-                  <tr><td>Ejercicio de Sopa de letras en el que el candidato deberá identificar veinte (20) palabras relacionadas con la labor del Supervisor.</td></tr>
                 </tbody>
               </table>
               <li>Resultados y observaciones: Revisión y calificación de los requisitos de competencia por parte del examinador designado; el candidato deberá obtener un resultado mayor o igual (>=) a setenta (70) puntos en la sumatoria de las dos fases para aprobar. Si el candidato al cuantificar las etapas de la evaluación según la ponderación definida está por debajo del umbral, tendrá noventa (90) días calendario para volver a aplicar el esquema, la cual será programada por el organismo.</li>

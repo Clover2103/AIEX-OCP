@@ -130,8 +130,6 @@ const ApproachVigilanciaBody = () => {
                   <tr><td>Ejercicio selección de informe, Relacionado con las Normas sectoriales de competencia laboral de referencia.</td></tr>
                   <tr><td>Ejercicio de selección de concepto/actividad, relacionado con la labor que realiza el Vigilante de seguridad.</td></tr>
                   <tr><td>Ejercicio de identificación de elementos apoyado con una imagen de referencia en el que el candidato deberá seleccionar aquellas herramientas asociadas a su labor como Vigilante.</td></tr>
-                  <tr><td>Ejercicio de Crucigrama con catorce (14) definiciones relacionadas con la actividad del Vigilante.</td></tr>
-                  <tr><td>Ejercicio de Sopa de letras en el que el candidato deberá identificar veinte (20) palabras relacionadas con la labor del Vigilante.</td></tr>
                 </tbody>
               </table>
               <li>Resultados y observaciones: Revisión y calificación de los requisitos de competencia por parte del examinador designado; el candidato deberá obtener un resultado mayor o igual (>=) a setenta (70) puntos en la sumatoria de las dos fases para aprobar. Si el candidato al cuantificar las etapas de la evaluación según la ponderación definida está por debajo del umbral, tendrá noventa (90) días calendario para volver a aplicar el esquema, la cual será programada por el organismo.</li>

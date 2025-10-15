@@ -20,13 +20,13 @@ const ApploachGISCBody = () => {
                   Certificación como GESTOR DE INFORMACIÓN Y SERVICIO AL CLIENTE.
                   Basado en los criterios de competencia de la Norma Sectorial de Competencia Laboral (NSCL):
                   <ul>
-                    <li>Atender clientes de acuerdo con procedimiento de servicio y normativa. Código 210601020 V2.</li>
+                    <li>210601020 – V2 – 14/12/2021 – Atender clientes de acuerdo con procedimiento de servicio y normativa.</li>
                   </ul>
                 </td>
               </tr>
               <tr>
                 <th>Costo de certificación inicial</th>
-                <td>Doscientos ocho mil doscientos tres pesos ($208.203) IVA incluido.</td>
+                <td>25 % del SMMLV, IVA incluido.</td>
               </tr>
               <tr>
                 <th>Intentos de presentación de exámenes</th>
@@ -39,19 +39,23 @@ const ApploachGISCBody = () => {
                     <li>Interactuar con personas.</li>
                     <li>Tratar información.</li>
                     <li>Emitir respuesta.</li>
+                    <li>Criterios de desempeño generales.</li>
+                    <li>Conocimientos esenciales.</li>
+                    <li>Evidencias de desempeño directo.</li>
+                    <li>Evidencias de desempeño de producto.</li>
                   </ul>
                 </td>
               </tr>
               <tr>
                 <th>Vigencia de la certificación</th>
-                <td>3 años a partir de la fecha de certificación.</td>
+                <td>1 año a partir de la fecha de certificación.</td>
               </tr>
               <tr>
                 <th>Tiempos de vigilancia y renovación</th>
                 <td>
                   <ul>
                     <li>Vigilancia a los 18 meses de otorgada la certificación.</li>
-                    <li>Renovación se hará con mínimo un mes antes de cumplir 36 meses de otorgada la certificación. Es obligación de la persona certificada asistir al organismo en las fechas establecidas en el documento Reglas del Servicio de Certificación OD-18, para realizar las actividades de evaluación de vigilancia y renovación, de no hacerlo será la certificación será retirada.</li>
+                    <li>Renovación al año de otorgada la certificación. No aplican actividades de vigilancia.</li>
                   </ul>
                 </td>
               </tr>
@@ -78,7 +82,7 @@ const ApploachGISCBody = () => {
               </tr>
               <tr>
                 <th>Duración del examen</th>
-                <td>3 horas y 30 minutos.</td>
+                <td>240 minutos.</td>
               </tr>
             </tbody>
           </table>
@@ -113,21 +117,17 @@ const ApploachGISCBody = () => {
                   <tr>
                     <th rowSpan="4">Módulo Teórico (120 minutos):</th>
                   </tr>
-                  <tr><td>60 ítems de opción múltiple con única respuesta.</td></tr>
-                  <tr><td>10 ítems de Verdadero o Falso.</td></tr>
-                  <tr><td>10 ítems de Apareamiento.</td></tr>
+                  <tr><td>80 preguntas entre las siguientes opciones:</td></tr>
+                  <tr><td>Preguntas de opción múltiple con única respuesta.</td></tr>
+                  <tr><td>Preguntas de Verdadero o Falso.</td></tr>
+                  <tr><td>Preguntas de Apareamiento.</td></tr>
                   <tr>
-                    <th rowSpan="9">Módulo Práctico (90 minutos):</th>
+                    <th rowSpan="9">Prueba Práctico (90 minutos):</th>
                   </tr>
-                  <tr><td>Ejercicio Informe de Caso 1: Abogados</td></tr>
-                  <tr><td>7 ítems de selección múltiple con única respuesta</td></tr>
-                  <tr><td>1 ítem de Falso o Verdadero</td></tr>
-                  <tr><td>Ejercicio Informe de Caso 2: Concesionario</td></tr>
-                  <tr><td>4 ítems de selección múltiple con única respuesta</td></tr>
-                  <tr><td>4 ítems de Falso o Verdadero</td></tr>
-                  <tr><td>Ejercicio Informe de Caso 3: Llamada</td></tr>
-                  <tr><td>7 ítems de selección múltiple con única respuesta</td></tr>
-                  <tr><td>1 ítem de Falso o Verdadero</td></tr>
+                  <tr><td>Caso 1: Agencia de reservas</td></tr>
+                  <tr><td>Caso 2: Consuladoa</td></tr>
+                  <tr><td>Caso 3: Entrevista - preguntas</td></tr>
+                  <tr><td>Caso 4: Reporte de servicio</td></tr>
                 </tbody>
               </table>
               <li>Resultados y observaciones: Revisión y calificación de los requisitos de competencia por parte del examinador designado; el candidato deberá obtener un resultado mayor o igual (>=) a setenta (70) puntos en la sumatoria de las dos fases para aprobar. Si el candidato al cuantificar las etapas de la evaluación según la ponderación definida está por debajo del umbral, tendrá noventa (90) días calendario para volver a aplicar el esquema, la cual será programada por el organismo.</li>

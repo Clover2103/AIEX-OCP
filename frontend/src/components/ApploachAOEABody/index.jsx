@@ -42,6 +42,10 @@ const ApploachAOEABody = () => {
                     <li>Caracterizar componentes.</li>
                     <li>Modelar pronostico.</li>
                     <li>Estimar factores.</li>
+                    <li>Criterios de desempeño generales.</li>
+                    <li>Conocimientos esenciales.</li>
+                    <li>Evidencias de desempeño directo.</li>
+                    <li>Evidencias de desempeño de producto.</li>
                   </ul>
                 </td>
               </tr>
@@ -80,7 +84,7 @@ const ApploachAOEABody = () => {
               </tr>
               <tr>
                 <th>Duración del examen</th>
-                <td>180 minutos.</td>
+                <td>240 minutos.</td>
               </tr>
             </tbody>
           </table>
@@ -115,16 +119,16 @@ const ApploachAOEABody = () => {
                   <tr>
                     <th rowSpan="4">Modulo Teórico (120 minutos):</th>
                   </tr>
-                  <tr><td>60 ítems de selección múltiple con única respuesta.</td></tr>
-                  <tr><td>10 ítems de Verdadero o Falso.</td></tr>
-                  <tr><td>10 ítems de Apareamiento.</td></tr>
+                  <tr><td>80 preguntas entre las siguientes opciones:</td></tr>
+                  <tr><td>Preguntas de opción múltiple con única respuesta.</td></tr>
+                  <tr><td>Preguntas de Verdadero o Falso.</td></tr>
+                  <tr><td>Preguntas de Apareamiento.</td></tr>
                   <tr>
                     <th rowSpan="5">Modulo Practico (120 minutos):</th>
                   </tr>
-                  <tr><td>Ejercicio de selección de informes, relacionado con las Normas sectoriales de competencia laboral de referencia.</td></tr>
-                  <tr><td>Ejercicio informe de caso relacionado con las NSCL: 260401037 - V2 - 26/12/2022 - Diseñar plan de seguridad de acuerdo con metodologías y normativa de seguridad privada y 260401041 - V1 - 19/07/2018 - Estructurar esquemas de seguridad de acuerdo con niveles de riesgo y normativa.</td></tr>
-                  <tr><td>Ejercicio de Crucigrama con dieciséis (16) definiciones relacionadas con la actividad del Gestor de análisis de riesgos y planes de seguridad.</td></tr>
-                  <tr><td>Ejercicio de Sopa de letras en el que el candidato deberá identificar veinte (20) palabras relacionadas con la labor del Gestor de análisis de riesgos y planes de seguridad.</td></tr>
+                  <tr><td>Caso 1 – Operador de Transporte Multimodal</td></tr>
+                  <tr><td>Caso 2 – Contaminación contenedores</td></tr>
+                  <tr><td>Caso 3 – Seguridad de los procesos</td></tr>
                 </tbody>
               </table>
               <li>Resultados y observaciones: Revisión y calificación de los requisitos de competencia por parte del examinador designado; el candidato deberá obtener un resultado mayor o igual (>=) a setenta (70) puntos en la sumatoria de las dos fases para aprobar. Si el candidato al cuantificar las etapas de la evaluación según la ponderación definida está por debajo del umbral, tendrá noventa (90) días calendario para volver a aplicar el esquema, la cual será programada por el organismo.</li>
