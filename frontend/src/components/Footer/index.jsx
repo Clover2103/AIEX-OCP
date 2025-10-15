@@ -4,6 +4,9 @@ import { FaTiktok } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaPhoneAlt } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
 import isme from "../../assets/Logo ISME.png";
 import onac from "../../assets/footer/Logo ONAC.jpg";
 import "./Footer.css";
@@ -37,6 +40,12 @@ const Footer = () => {
           <div className="cont-logo-footer">
             <img src={isme} alt="ISME" />
           </div>
+        </div>
+
+        <div className="orientation-contact">
+          <p><FaLocationDot className="icon-info-form"/> Calle 75a #24-65, Bogotá DC</p>
+          <p><FaPhoneAlt className="icon-info-form"/> +57 316 5294689</p>
+          <p><IoIosMail className="icon-info-form"/>certificacionpersonas@aiex.com.co</p>
         </div>
       </div>
 
