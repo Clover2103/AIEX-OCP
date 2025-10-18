@@ -73,7 +73,7 @@ const Footer = () => {
       <div className="cont-area col-md-4">
         <div className="cont-links">
           <p><Link to="/policies">Politicas de la organización</Link></p>
-          <p><Link to="/home#homeAboutUs">¿Quienes somos?</Link></p>
+          <p><Link to="/#homeAboutUs">¿Quienes somos?</Link></p>
           <p><Link to="/scopes#scopesBody">Nuestros alcances</Link></p>
           <p><Link to="/contact">Contactenos</Link></p>
           <p><Link to="/scopes-r-and-d">Derechos y deberes</Link></p>
