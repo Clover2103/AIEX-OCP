@@ -1,4 +1,4 @@
-// data/EsquemaVigilante.js
+// data/EsquemaVigilante.js (ESTRUCTURA CORREGIDA Y COMPLETA)
 
 export const ESQUEMA_VIGILANTE = {
     // Título principal
@@ -9,7 +9,6 @@ export const ESQUEMA_VIGILANTE = {
     infoClave: [
         {
             titulo: "Esquema y Alcance",
-            // NOTA: Contenido como TEXTO (string)
             contenido: "Certificación basada en el conocimiento y aplicación de las Normas Sectoriales de Competencia Laboral (NSCL) del SENA: Control de accesos, atención de crisis y prevención de incidentes de seguridad.",
             icono: "Shield" 
         },
@@ -34,7 +33,6 @@ export const ESQUEMA_VIGILANTE = {
     requisitos: [
         {
             titulo: "Prerrequisitos Básicos",
-            // NOTA: Contenido como LISTA (array)
             contenido: [
                 "Mayor de edad (18 años cumplidos).",
                 "Saber leer y escribir."
@@ -43,7 +41,6 @@ export const ESQUEMA_VIGILANTE = {
         },
         {
             titulo: "Competencias a Evaluar",
-            // NOTA: Contenido como LISTA (array)
             contenido: [
                 "Autorizar ingreso.",
                 "Custodiar bienes.",
@@ -56,21 +53,32 @@ export const ESQUEMA_VIGILANTE = {
         },
         {
             titulo: "Modalidad de Evaluación",
-            // NOTA: Contenido como TEXTO (string)
             contenido: "Presencial en las instalaciones del organismo o a nivel nacional mediante el uso de ayudas tecnológicas (digital) bajo la Política de Seguridad.",
             icono: "Monitor"
         },
         {
             titulo: "Criterios de Suspensión/Retiro",
-            // NOTA: Contenido como TEXTO (string)
             contenido: "Uso indebido de los certificados otorgados. Se aplica el Procedimiento interno definido para suspender o retirar la certificación.",
             icono: "Warning"
+        },
+        // ELEMENTOS QUE FALTABAN:
+        {
+            titulo: "Cambios en el Esquema",
+            contenido: "Únicamente si las NSCL de referencia sufren alguna modificación, actualización o ajuste y el comité del esquema determina que es necesario realizar cambios en el alcance y/o una evaluación adicional.",
+            icono: "Update"
+        },
+        {
+            titulo: "Logística del Examen",
+            contenido: [
+                "Idioma del examen: Castellano.",
+                "Duración máxima del examen: 270 minutos."
+            ],
+            icono: "Clock"
         }
     ],
 
     // BLOQUE 3: Proceso de Certificación (Pasos)
     proceso: [
-        // ... (La estructura de "proceso" no causó error y se mantiene igual)
         {
             paso: 1,
             titulo: "SELECCIÓN",
@@ -102,5 +110,28 @@ export const ESQUEMA_VIGILANTE = {
                 "Cargue de la información del certificado al website (Nombres, vigencia, estado, etc.)."
             ]
         }
-    ]
+    ],
+    
+    // CLAVE QUE FALTABA:
+    detalleExamen: {
+        teorico: {
+            duracion: "120 minutos",
+            items: [
+                "75 ítems de opción múltiple con única respuesta.",
+                "15 ítems de Falso o Verdadero.",
+                "25 ítems de Apareamiento."
+            ]
+        },
+        practico: {
+            duracion: "150 minutos",
+            items: [
+                "Ejercicio completar informe - Controlar accesos.",
+                "Ejercicio completar informe - Atender situaciones de crisis.",
+                "Ejercicio completar informe - Prevenir incidentes de seguridad.",
+                "Ejercicio selección de informe, Relacionado con Normas sectoriales de competencia laboral de referencia.",
+                "Ejercicio de selección de concepto/actividad.",
+                "Ejercicio de identificación de elementos apoyado con una imagen de referencia."
+            ]
+        }
+    }
 };
