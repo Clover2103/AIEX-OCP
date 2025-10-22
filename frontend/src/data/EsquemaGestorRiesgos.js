@@ -1,4 +1,6 @@
 // data/EsquemaGestorRiesgos.js
+import pdfNorma_260401037 from "../assets/alcances/pdf/riesgos/NSCL 260401037 V2.pdf";
+import pdfNorma_260401041 from "../assets/alcances/pdf/riesgos/NSCL 260401041 V2.pdf";
 
 export const ESQUEMA_GESTOR_RIESGOS = {
     // Títulos principales
@@ -138,5 +140,10 @@ export const ESQUEMA_GESTOR_RIESGOS = {
                 "Otro (1) ejercicio de construcción de Matriz de riesgos." // Duplicado en la fuente original, mantenido aquí.
             ]
         }
-    }
+    },
+
+    documentos: [
+        { nombre: "NSCL 260401037 V2", url: pdfNorma_260401037 },
+        { nombre: "NSCL 260401041 V2", url: pdfNorma_260401041 },
+    ]
 };

@@ -1,4 +1,6 @@
 // data/EsquemaOMT.js
+import pdfNorma_260401051 from "../assets/alcances/pdf/omt/NSCL 260401051 V1.pdf";
+import pdfNorma_260401036 from "../assets/alcances/pdf/omt/NSCL 260401036 V2.pdf";
 
 export const ESQUEMA_OMT = {
     // Títulos principales
@@ -138,5 +140,10 @@ export const ESQUEMA_OMT = {
                 "Ejercicio de identificación de elementos apoyado con una imagen de referencia."
             ]
         }
-    }
+    },
+
+    documentos: [
+        { nombre: "NSCL 260401051 V1", url: pdfNorma_260401051 },
+        { nombre: "NSCL 260401036 V2", url: pdfNorma_260401036 },
+    ]
 };

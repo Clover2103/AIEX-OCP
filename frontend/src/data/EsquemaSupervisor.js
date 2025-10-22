@@ -1,4 +1,5 @@
 // data/EsquemaSupervisor.js
+import pdfNorma_260401038 from "../assets/alcances/pdf/supervisor/NSCL 260401038 V2.pdf";
 
 export const ESQUEMA_SUPERVISOR = {
     // Títulos principales
@@ -133,5 +134,9 @@ export const ESQUEMA_SUPERVISOR = {
                 "Ejercicio de selección de informes, relacionado con la Norma sectorial de competencia laboral de referencia."
             ]
         }
-    }
+    },
+
+    documentos: [
+        { nombre: "NSCL 260401038 V2", url: pdfNorma_260401038 },
+    ]
 };

@@ -1,4 +1,7 @@
 // data/EsquemaAOEA.js
+import pdfNorma_210101079 from "../assets/alcances/pdf/aoea/NSCL 210101079 V1.pdf";
+import pdfNorma_210101067 from "../assets/alcances/pdf/aoea/NSCL 210101067 V2.pdf";
+
 
 export const ESQUEMA_AOEA = {
     // Títulos principales
@@ -137,5 +140,10 @@ export const ESQUEMA_AOEA = {
                 "Caso 3 – Seguridad de los procesos."
             ]
         }
-    }
+    },
+
+    documentos: [
+        { nombre: "NSCL 210101079 V1", url: pdfNorma_210101079 },
+        { nombre: "NSCL 210101067 V2", url: pdfNorma_210101067 },
+    ]
 };

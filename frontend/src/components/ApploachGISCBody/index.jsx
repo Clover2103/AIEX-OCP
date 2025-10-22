@@ -37,6 +37,7 @@ const ApploachGISCBody = () => {
             <CertificacionCard
                 titulo={ESQUEMA_GISC.titulo}
                 infoClave={ESQUEMA_GISC.infoClave}
+                documentos={ESQUEMA_GISC.documentos}
                 onOpenModal={() => handleOpenModal(ESQUEMA_GISC)}
             />
         </div>

@@ -1,4 +1,6 @@
 // data/EsquemaEscolta.js
+import pdfNorma_260401048 from "../assets/alcances/pdf/escolta/NSCL 260401048 V1.pdf";
+import pdfNorma_260401039 from "../assets/alcances/pdf/escolta/NSCL 260401039 V2.pdf";
 
 export const ESQUEMA_ESCOLTA = {
     // Títulos principales
@@ -141,5 +143,10 @@ export const ESQUEMA_ESCOLTA = {
                 "Ejercicio de selección/informe relacionado con la NSCL: Evaluar riesgos del protegido."
             ]
         }
-    }
+    },
+
+    documentos: [
+        { nombre: "NSCL 260401048 V1", url: pdfNorma_260401048 },
+        { nombre: "NSCL 260401039 V2", url: pdfNorma_260401039 },
+    ]
 };

@@ -37,6 +37,7 @@ const ApploachRiesgosBody = () => {
             <CertificacionCard
                 titulo={ESQUEMA_GESTOR_RIESGOS.titulo}
                 infoClave={ESQUEMA_GESTOR_RIESGOS.infoClave}
+                documentos={ESQUEMA_GESTOR_RIESGOS.documentos}
                 onOpenModal={() => handleOpenModal(ESQUEMA_GESTOR_RIESGOS)}
             />
         </div>

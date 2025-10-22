@@ -1,4 +1,5 @@
 // data/EsquemaGISC.js
+import pdfNorma_210601020 from "../assets/alcances/pdf/gisc/NSCL 210601020 V2.pdf";
 
 export const ESQUEMA_GISC = {
     // Títulos principales
@@ -135,5 +136,9 @@ export const ESQUEMA_GISC = {
                 "Caso 4: Reporte de servicio."
             ]
         }
-    }
+    },
+    
+    documentos: [
+        { nombre: "NSCL 210601020 V2", url: pdfNorma_210601020 },
+    ]
 };

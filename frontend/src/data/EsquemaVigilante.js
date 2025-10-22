@@ -1,4 +1,7 @@
 // data/EsquemaVigilante.js (ESTRUCTURA CORREGIDA Y COMPLETA)
+import pdfNorma_260401050 from "../assets/alcances/pdf/vigilante/NSCL 260401050 V1.pdf";
+import pdfNorma_260401049 from "../assets/alcances/pdf/vigilante/NSCL 260401049 V1.pdf";
+import pdfNorma_260401040 from "../assets/alcances/pdf/vigilante/NSCL 260401040 V2.pdf";
 
 export const ESQUEMA_VIGILANTE = {
     // Título principal
@@ -133,5 +136,11 @@ export const ESQUEMA_VIGILANTE = {
                 "Ejercicio de identificación de elementos apoyado con una imagen de referencia."
             ]
         }
-    }
+    },
+
+    documentos: [
+        { nombre: "NSCL 260401050 V1", url: pdfNorma_260401050 },
+        { nombre: "NSCL 260401049 V1", url: pdfNorma_260401049 },
+        { nombre: "NSCL 260401040 V2", url: pdfNorma_260401040 },
+    ]
 };

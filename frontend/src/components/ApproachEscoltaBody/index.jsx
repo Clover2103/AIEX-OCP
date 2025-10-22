@@ -37,6 +37,7 @@ const ApproachEscoltaBody = () => {
             <CertificacionCard
                 titulo={ESQUEMA_ESCOLTA.titulo}
                 infoClave={ESQUEMA_ESCOLTA.infoClave}
+                documentos={ESQUEMA_ESCOLTA.documentos} 
                 onOpenModal={() => handleOpenModal(ESQUEMA_ESCOLTA)}
             />
         </div>

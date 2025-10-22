@@ -27,18 +27,12 @@ const ApproachVigilanciaBody = () => {
             {/* <h2 className="h1 text-center mb-5">Nuestros Enfoques de Certificación</h2> */}
 
             <div className="row justify-content-center" >
-                
-                {/* Aquí iterarías sobre tus 7 enfoques, pero para el ejemplo usamos solo el de Vigilancia.
-                Si tuvieras un array de 7 esquemas, harías: 
-                {TODOS_LOS_ESQUEMAS.map((esquema) => (
-                    <CertificacionCard ... onOpenModal={() => handleOpenModal(esquema)} />
-                ))}
-                */}
 
                 {/* Tarjeta de Vigilante de Seguridad */}
                 <CertificacionCard
                     titulo={ESQUEMA_VIGILANTE.titulo}
                     infoClave={ESQUEMA_VIGILANTE.infoClave}
+                    documentos={ESQUEMA_VIGILANTE.documentos} 
                     onOpenModal={() => handleOpenModal(ESQUEMA_VIGILANTE)}
                 />
             </div>
