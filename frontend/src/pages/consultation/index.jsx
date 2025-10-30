@@ -5,24 +5,6 @@ import { ConsultationDocuments } from "../../components/ConsultationDocuments";
 import { ConsultationManuals } from "../../components/ConsultationManuals";
 import "./consultation.css"
 
-// ----------------------------------------------------
-// --- CSS PURO ---
-// ----------------------------------------------------
-const styles = (
-  <style>
-    {`
-    /* Variables y Estilos Generales */
-    
-
-    
-    `}
-  </style>
-);
-
-// ----------------------------------------------------
-// --- NUEVO ConsultationSelect (Navegación Visual) ---
-// ----------------------------------------------------
-
 const NavItem = ({ icon: Icon, label, value, isSelected, onClick }) => {
   // Aplicamos la clase 'selected' si es true
   const className = `nav-item ${isSelected ? 'selected' : ''}`;
@@ -62,10 +44,6 @@ const ConsultationSelect = ({ selectedValue, onSelectChange }) => {
   );
 };
 
-// ----------------------------------------------------
-// --- NUEVO Consultation (Componente Principal) ---
-// ----------------------------------------------------
-
 const Consultation = () => {
   // Estado inicializado a 'certificado'
   const [selectedOption, setSelectedOption] = useState('certificado');
@@ -77,7 +55,6 @@ const Consultation = () => {
 
   return ( 
     <div className="consultation-app">
-      {styles} {/* Inyectamos el CSS puro aquí */}
 
       <div className="consultation-wrapper">
         
